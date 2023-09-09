@@ -23,4 +23,4 @@ Hobbies
 ======
 Culinary (specifically Chinese cuisine and dessert-making)
 
-Music (Piano, violin, and harmonica)
+Music (piano, violin, and harmonica)
