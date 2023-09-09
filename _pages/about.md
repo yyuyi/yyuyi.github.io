@@ -11,13 +11,15 @@ redirect_from:
 
 ![MPH Graduation Photo](/images/Yuyi MPH.jpg){: .align-right width="300px"}
 
-→ Originally from Shanghai, China. My Chinese name:杨羽依.
+→ Originally from Shanghai, China
 
-→ Pursuing a PhD in Computational and Data Sciences.
+→ My Chinese name:杨羽依
 
-→ A doctoral scholar with the McDonnell International Scholars Academy.
+→ Pursuing a PhD in Computational and Data Sciences
 
-→ Focus on harnessing the power of cutting-edge AI technologies to transform the landscape of public health.
+→ A doctoral scholar with the McDonnell International Scholars Academy
+
+→ Focus on harnessing the power of cutting-edge AI technologies to transform the landscape of public health
 
 Hobbies
 ======
