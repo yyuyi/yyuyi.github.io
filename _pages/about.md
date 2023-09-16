@@ -13,7 +13,7 @@ redirect_from:
 
 → Originally from Shanghai, China
 
-→ My Chinese name:杨羽依
+→ My Chinese name: 杨羽依
 
 → Pursuing a PhD in Computational and Data Sciences
 
