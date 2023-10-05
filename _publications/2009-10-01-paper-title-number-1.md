@@ -1,15 +1,9 @@
 ---
-title: "Paper Title Number 1"
-collection: publications
-permalink: /publication/2009-10-01-paper-title-number-1
-excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
+title: "[Research process of Gasdermin E in inducing cell pyroptosis]"
+collection: Chinese Journal of Pathology
+excerpt: '细胞焦亡是一种程序性细胞死亡，近30年来焦亡过程与机制被逐步发现。Gasdermin家族介导了细胞焦亡，其中Gasdermin D（GSDMD）和Gasdermin E（GSDME）是焦亡的主要执行蛋白。GSDME可被活化的含半胱氨酸的天冬氨酸蛋白水解酶-3（Caspase-3）和丝氨酸蛋白酶颗粒酶B切割，释放可以诱导焦亡的N端片段，Caspase-3的活化通路则各有不同。本文将对GSDME与细胞焦亡的相关作用机制进行综述，增加对于Gasdermin E诱导细胞焦亡的认识，为癌症的治疗与预后提供新的视角。'
 date: 2009-10-01
 venue: 'Journal 1'
-paperurl: 'http://academicpages.github.io/files/paper1.pdf'
-citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
+paperurl: 'https://doi.org/10.3760/cma.j.cn112151-20200724-0058'
+citation: 'Yang Y, Liu X. [Research process of Gasdermin E in inducing cell pyroptosis]. Chinese Journal of Pathology. 2021. 50(4), 421–424. https://doi.org/10.3760/cma.j.cn112151-20200724-0058'
 ---
-This paper is about the number 1. The number 2 is left for future work.
-
-[Download paper here](http://academicpages.github.io/files/paper1.pdf)
-
-Recommended citation: Your Name, You. (2009). "Paper Title Number 1." <i>Journal 1</i>. 1(1).
