@@ -19,6 +19,8 @@ Additionally, my research interests include the responsible integration of AI in
 
 Through interdisciplinary collaboration, responsible AI implementation, and rigorous methodological advancements, I strive to harness AI's potential to fundamentally transform and improve public health outcomes globally.
 
+My advisors are Dr. Ruopeng An (https://socialwork.nyu.edu/faculty-and-research/our-faculty/ruopeng-an.html) and Dr. Jiaxin Huang (https://engineering.washu.edu/faculty/Jiaxin-Huang.html).
+
 
 Hobbies
 ======
