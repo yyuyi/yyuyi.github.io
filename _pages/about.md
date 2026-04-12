@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 
-![MPH Graduation Photo](/images/Yuyi MPH.jpg){: .align-right width="300px"}
+![Yuyi New York Trip](/images/Yuyi New York.JPG){: .align-right width="300px"}
 
 Originally from Shanghai, China, I am currently pursuing a PhD in Computational and Data Sciences at Washington University in St. Louis. As a doctoral scholar with the prestigious McDonnell International Scholars Academy, my academic journey is deeply rooted in the intersection of artificial intelligence and public health.
 
