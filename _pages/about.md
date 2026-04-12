@@ -27,3 +27,5 @@ Hobbies
 Culinary (specifically Chinese cuisine and dessert-making)
 
 Music (piano, violin, and harmonica)
+
+Badminton
