@@ -14,12 +14,9 @@ redirect_from:
 
 Originally from Shanghai, China, I am currently pursuing a PhD in Computational and Data Sciences at Washington University in St. Louis and am a doctoral scholar with the McDonnell International Scholars Academy. My research lies at the intersection of artificial intelligence, public health, computational social science, and health decision-making.
 
-<div style="margin-top: 1rem; margin-bottom: 1rem;">
-  <span style="background-color:#f3f4f6; padding:6px 10px; border-radius:16px; margin-right:6px; display:inline-block;">Artificial Intelligence</span>
-  <span style="background-color:#f3f4f6; padding:6px 10px; border-radius:16px; margin-right:6px; display:inline-block;">Public Health</span>
-  <span style="background-color:#f3f4f6; padding:6px 10px; border-radius:16px; margin-right:6px; display:inline-block;">Computational Social Science</span>
-  <span style="background-color:#f3f4f6; padding:6px 10px; border-radius:16px; margin-right:6px; display:inline-block;">Health Decision-Making</span>
-</div>
+<p style="margin-top:1rem; margin-bottom:2rem; color:#666; font-weight:500;">
+  Artificial Intelligence · Public Health · Computational Social Science · Health Decision-Making
+</p>
 
 ## Research Focus
 
