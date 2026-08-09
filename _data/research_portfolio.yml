@@ -4,7 +4,7 @@
   venue: "Journal of Social Computing"
   status: "In press"
   type: "Journal Publication"
-  domains: ["AI Methods", "Social Work & Mental Health"]
+  domains: ["AI Methods", "Public Health", "Social Work & Mental Health"]
   roles: ["First author", "Corresponding"]
 
 - year: 2026
@@ -52,7 +52,7 @@
   venue: "Healthcare"
   status: "Published"
   type: "Journal Publication"
-  domains: ["AI Methods", "Public Health", "Social Work & Mental Health"]
+  domains: ["Public Health", "Social Work & Mental Health"]
   roles: ["First author", "Corresponding"]
   link: "https://doi.org/10.3390/healthcare13050446"
 
@@ -82,7 +82,7 @@
   venue: "Nutrients"
   status: "Published"
   type: "Journal Publication"
-  domains: ["AI Methods", "Public Health", "Biomedical Research"]
+  domains: ["AI Methods", "Public Health"]
   roles: ["Corresponding"]
   link: "https://doi.org/10.3390/nu16091294"
 
@@ -102,7 +102,7 @@
   venue: "Journal of Sport and Health Science"
   status: "Published"
   type: "Journal Publication"
-  domains: ["Public Health", "AI Methods"]
+  domains: ["Public Health"]
   roles: ["Other"]
   link: "https://doi.org/10.1016/j.jshs.2023.09.010"
 
@@ -184,7 +184,7 @@
   status: "Submitted · Preprint"
   type: "CS Conference"
   display_group: "Under Review & Revision"
-  domains: ["AI Methods", "Responsible AI"]
+  domains: ["AI Methods"]
   roles: ["Other"]
   link: "https://arxiv.org/abs/2605.15529"
 
@@ -204,7 +204,7 @@
   venue: "In: An R, Lindsey MA (Eds.) · Artificial Intelligence in Social Work: Bridging Technology and Humanity · Springer"
   status: "Published"
   type: "Book Chapters"
-  domains: ["Social Work & Mental Health", "AI Methods"]
+  domains: ["Social Work & Mental Health"]
   roles: ["First author", "Corresponding"]
   link: "https://doi.org/10.1007/978-3-032-18443-6_21"
 
