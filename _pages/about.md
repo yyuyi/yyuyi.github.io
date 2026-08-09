@@ -1,53 +1,135 @@
 ---
+layout: home
 permalink: /
-title: "┏(＾0＾)┛ Hello, I'm Yuyi!"
-excerpt: "About me"
-author_profile: true
-redirect_from: 
+title: "Yuyi Yang"
+excerpt: "Agentic AI, public health, and human-centered decision-making"
+author_profile: false
+redirect_from:
   - /about/
   - /about.html
 ---
 
-![Yuyi New York Trip](/images/Yuyi New York.JPG){: .align-right width="300px"}
+<section class="home-hero home-hero--standalone" aria-labelledby="home-name">
+  <div class="home-hero__inner">
+    <div class="home-hero__copy">
+      <p class="home-eyebrow">PhD Student · Computational and Data Sciences</p>
+      <h1 class="home-name" id="home-name">Yuyi <em>Yang</em></h1>
+      <p class="home-tagline">Building <span>responsible AI</span> for public health, social science, and human decision-making.</p>
+      <p class="home-intro">
+        I am a PhD student in Computational and Data Sciences at Washington University in St. Louis and a McDonnell International Scholar. My research brings together agentic AI, qualitative inquiry, public health, and human-centered decision-making.
+      </p>
+      <p class="home-advisors">
+        Advised by <a href="https://socialwork.nyu.edu/faculty-and-research/our-faculty/ruopeng-an.html">Dr. Ruopeng An</a> and <a href="https://engineering.washu.edu/faculty/Jiaxin-Huang.html">Dr. Jiaxin Huang</a>.
+      </p>
 
-## About Me
+      <div class="home-actions" aria-label="Profile links">
+        <a class="home-button home-button--primary" href="{{ '/publications/' | relative_url }}">Explore Research</a>
+        <a class="home-social" href="mailto:y.yuyi@wustl.edu">Email</a>
+        <a class="home-social" href="https://scholar.google.com/citations?user=W3SVZDYAAAAJ&amp;hl=en">Google Scholar</a>
+        <a class="home-social" href="https://www.linkedin.com/in/yuyi-yang">LinkedIn</a>
+        <a class="home-social" href="https://orcid.org/0000-0002-7625-810X">ORCID</a>
+      </div>
+    </div>
 
-Originally from Shanghai, China, I am currently pursuing a PhD in Computational and Data Sciences at Washington University in St. Louis and am a doctoral scholar with the McDonnell International Scholars Academy. My research lies at the intersection of artificial intelligence, public health, computational social science, and health decision-making.
-
-<p style="margin-top:1rem; margin-bottom:2rem; color:#666; font-weight:500;">
-  Artificial Intelligence · Public Health · Computational Social Science · Health Decision-Making
-</p>
-
-## Research Focus
-
-### 1. AI-Assisted Qualitative Research
-
-My current work focuses on two main areas. First, I study how large language models and generative AI can support, replicate, and evaluate qualitative research workflows, including thematic analysis, grounded theory coding, and constant comparative analysis. I am interested in when LLMs can approximate human qualitative reasoning, where they diverge from expert interpretation, and how retrieval-augmented generation, multi-agent workflows, audit trails, and human evaluation can make AI-assisted qualitative analysis more transparent, traceable, and methodologically responsible.
-
-### 2. LLM-Based Simulation and Decision-Making
-
-Second, I develop LLM-based simulation and decision-making frameworks for public health, health economics, and social systems. This includes using AI agents to simulate economic preferences, survey responses, policy reasoning, behavioral dynamics, and collective decision-making. My work examines both the promise and the limitations of LLM agents as tools for modeling complex human and population-level processes.
-
-### 3. Responsible AI for Health
-
-My broader research interests include responsible AI for mental health services, digital health, vaccine safety surveillance, and AI-assisted healthcare decision-making. Across these areas, I am interested in developing reliable, interpretable, and culturally responsive AI systems that can support health communication, risk prediction, clinical and public health education, and real-world decision-making across diverse populations and resource settings.
-
-Across my research, I emphasize rigorous evaluation, interpretability, traceability, and responsible AI implementation. Through interdisciplinary collaboration and methodological innovation, I aim to develop AI systems that complement traditional empirical methods while remaining technically robust, evidence-grounded, ethically accountable, empathetic, and useful for improving public health and social well-being.
-
-## Advisors
-
-My advisors are [Dr. Ruopeng An](https://socialwork.nyu.edu/faculty-and-research/our-faculty/ruopeng-an.html) and [Dr. Jiaxin Huang](https://engineering.washu.edu/faculty/Jiaxin-Huang.html).
-
-## Hobbies
-
-<div style="display:flex; flex-wrap:wrap; gap:10px; margin-top: 0.5rem;">
-  <div style="background-color:#fafafa; border:1px solid #e5e7eb; border-radius:12px; padding:10px 14px;">
-    🍜 Culinary, especially Chinese cuisine and dessert-making
+    <figure class="home-portrait">
+      <img src="/images/Yuyi.jpg" alt="Portrait of Yuyi Yang">
+    </figure>
   </div>
-  <div style="background-color:#fafafa; border:1px solid #e5e7eb; border-radius:12px; padding:10px 14px;">
-    🎹 Music, including piano, violin, and harmonica
+
+  <div class="research-marquee" aria-label="Research areas">
+    <div class="research-marquee__track">
+      <div class="research-marquee__group">
+        <span>Generative AI</span><i>✦</i>
+        <span>Public Health</span><i>✦</i>
+        <span>Computational Social Science</span><i>✦</i>
+        <span>LLM Agents</span><i>✦</i>
+        <span>Qualitative Research</span><i>✦</i>
+        <span>Responsible AI</span><i>✦</i>
+      </div>
+      <div class="research-marquee__group" aria-hidden="true">
+        <span>Generative AI</span><i>✦</i>
+        <span>Public Health</span><i>✦</i>
+        <span>Computational Social Science</span><i>✦</i>
+        <span>LLM Agents</span><i>✦</i>
+        <span>Qualitative Research</span><i>✦</i>
+        <span>Responsible AI</span><i>✦</i>
+      </div>
+    </div>
   </div>
-  <div style="background-color:#fafafa; border:1px solid #e5e7eb; border-radius:12px; padding:10px 14px;">
-    🏸 Badminton
+</section>
+
+<section class="home-metrics" aria-labelledby="academic-impact-heading">
+  <div class="home-metrics__heading">
+    <p class="home-eyebrow">Academic impact</p>
+    <h2 class="sr-only" id="academic-impact-heading">Academic impact metrics</h2>
+    <p>Research profile as of August 9, 2026</p>
   </div>
-</div>
+
+  <div class="home-metrics__grid">
+    <a class="metric-card" href="https://scholar.google.com/citations?user=W3SVZDYAAAAJ&amp;hl=en" aria-label="289 citations on Google Scholar">
+      <strong>289</strong>
+      <span>Citations</span>
+      <small>Google Scholar</small>
+    </a>
+    <a class="metric-card" href="https://scholar.google.com/citations?user=W3SVZDYAAAAJ&amp;hl=en" aria-label="h-index of 7 on Google Scholar">
+      <strong>7</strong>
+      <span>h-index</span>
+      <small>Google Scholar</small>
+    </a>
+    <a class="metric-card" href="https://scholar.google.com/citations?user=W3SVZDYAAAAJ&amp;hl=en" aria-label="i10-index of 7 on Google Scholar">
+      <strong>7</strong>
+      <span>i10-index</span>
+      <small>Google Scholar</small>
+    </a>
+    <a class="metric-card" href="{{ '/publications/' | relative_url }}" aria-label="15 peer-reviewed publications">
+      <strong>15</strong>
+      <span>Peer-reviewed publications</span>
+      <small>Publication record</small>
+    </a>
+  </div>
+</section>
+
+<section class="home-content section-page-block" id="research" aria-labelledby="research-heading">
+  <header class="home-section-heading section-page-heading">
+    <p class="home-eyebrow">Research</p>
+    <h2 id="research-heading">AI designed to complement rigorous human inquiry.</h2>
+    <p>I develop and evaluate agentic AI systems for qualitative inquiry, public health simulation, and human-centered decision-making across social and healthcare contexts.</p>
+  </header>
+
+  <div class="research-grid">
+    <article class="research-card">
+      <span class="research-card__number">01</span>
+      <h3>AI-Assisted Qualitative Research</h3>
+      <p>I examine how large language models can support thematic analysis, grounded theory coding, and constant comparative analysis—where they approximate expert interpretation, where they diverge, and how retrieval, multi-agent workflows, audit trails, and human evaluation can make their use transparent and methodologically sound.</p>
+    </article>
+
+    <article class="research-card">
+      <span class="research-card__number">02</span>
+      <h3>Simulation &amp; Decision-Making</h3>
+      <p>I develop LLM-based frameworks that simulate economic preferences, survey responses, policy reasoning, behavioral dynamics, information diffusion, and collective decision-making. This work evaluates both the promise and limits of AI agents as models of complex human and population-level systems.</p>
+    </article>
+
+    <article class="research-card">
+      <span class="research-card__number">03</span>
+      <h3>Responsible AI for Health</h3>
+      <p>I develop reliable, interpretable, and culturally sensitive AI for mental health, digital health, vaccine safety surveillance, health communication, and public health education—grounded in rigorous evaluation, traceability, ethical accountability, and practical utility.</p>
+    </article>
+  </div>
+
+  <div class="research-principles">
+    <article><span>Method</span><strong>Evidence-grounded</strong><p>AI systems should complement established empirical and qualitative methods rather than obscure them.</p></article>
+    <article><span>Design</span><strong>Human-centered</strong><p>Tools should remain interpretable, culturally sensitive, and accountable to the people affected by them.</p></article>
+    <article><span>Impact</span><strong>Decision-relevant</strong><p>Research should support better health communication, policy reasoning, and real-world decisions.</p></article>
+  </div>
+
+  <div class="home-note">
+    <article class="home-note__panel">
+      <h3>Collaborate</h3>
+      <p>I welcome interdisciplinary collaborations spanning AI, public health, and social work.</p>
+    </article>
+    <article class="home-note__panel">
+      <h3>Beyond research</h3>
+      <p>I enjoy Chinese cooking and dessert-making, making music on the piano, violin, and harmonica, and playing badminton.</p>
+    </article>
+  </div>
+</section>

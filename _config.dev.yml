@@ -2,8 +2,16 @@
 
 url: http://localhost:4000
 
+# Avoid remote GitHub metadata calls during local preview builds.
+github: false
+
 analytics:
   provider: false
+
+# Do not count local design and content previews as real website visits.
+visitor_map:
+  script_src: ""
+  tracking_since: "August 9, 2026"
 
 comments:
   disqus:

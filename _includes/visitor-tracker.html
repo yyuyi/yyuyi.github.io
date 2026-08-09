@@ -1,0 +1,10 @@
+{% comment %}
+  Load the MapMyVisitors widget off-screen on every page except the public
+  Visitors page, where the same script is rendered as the visible map.
+  A site-specific script URL must be configured in _config.yml.
+{% endcomment %}
+{% if site.visitor_map and site.visitor_map.script_src != "" and page.url != "/visitors/" %}
+  <div class="site-visitor-tracker" aria-hidden="true">
+    <script type="text/javascript" id="mapmyvisitors" src="{{ site.visitor_map.script_src }}"></script>
+  </div>
+{% endif %}

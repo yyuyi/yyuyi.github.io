@@ -1,7 +1,19 @@
 # main links links
 main:
-  - title: "Publications"
-    url: "https://scholar.google.com/citations?user=W3SVZDYAAAAJ&hl=en"
+  - title: "Experience"
+    url: /experience/
+
+  - title: "Refereed Publications"
+    url: /publications/
+
+  - title: "Conference Presentations"
+    url: /presentations/
+
+  - title: "Recognition"
+    url: /recognition/
+
+  - title: "Visitors"
+    url: /visitors/
 
   # - title: "Talks"
   #  url: /talks/    
@@ -14,9 +26,6 @@ main:
         
   # - title: "Blog Posts"
   #  url: /year-archive/
-    
-  - title: "CV"
-    url: /files/Resume_github.pdf
     
    # - title: "Guide"
    #  url: /markdown/

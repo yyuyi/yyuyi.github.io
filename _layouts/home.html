@@ -11,12 +11,13 @@ layout: compress
     {% include head/custom.html %}
   </head>
 
-  <body>
-
+  <body class="home-page">
     {% include browser-upgrade.html %}
     {% include masthead.html %}
 
-    {{ content }}
+    <main id="main-content" class="home-main" role="main">
+      {{ content }}
+    </main>
 
     <div class="page__footer">
       <footer>
@@ -26,7 +27,7 @@ layout: compress
     </div>
 
     {% include scripts.html %}
+    <script src="{{ '/assets/js/research-portfolio.js' | relative_url }}" defer></script>
     {% include visitor-tracker.html %}
-
   </body>
 </html>

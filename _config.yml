@@ -7,13 +7,20 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Yuyi Yang's Homepage"
+title                    : "Academic Homepage"
 title_separator          : "-"
 name                     : &name "Yuyi Yang"
-description              : &description "personal description"
+description              : &description "Agentic AI, public health, health economics, and social systems"
 url                      : https://yyuyi.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "yyuyi/yyuyi.github.io"
+visitor_map:
+  # This one site-specific URL powers both global tracking and the visible map.
+  # Paste the src value from the MapMyVisitors embed code between the quotes.
+  script_src             : "https://mapmyvisitors.com/map.js?d=e-Qkgjzji1UXSEkJ9DKOZIwaawKXsRpdGPRt-XD2mqA&cl=ffffff&w=a"
+  # Set this to the date the live widget is first deployed, e.g. "August 9, 2026".
+  tracking_since         : "August 9, 2026"
+  tracking_since_iso     : "2026-08-09"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -81,8 +88,8 @@ analytics:
 # Site Author
 author:
   name             : "Yuyi Yang"
-  avatar           : "Yuyi Yang.jpg"
-  bio              : "Leveraging advanced AI technologies to revolutionize public health"
+  avatar           : "Yuyi.jpg"
+  bio              : "PhD student in Computational and Data Sciences developing agentic AI for public health, health economics, and social systems"
   location         : "St. Louis, MO, USA"
   employer         : "Washington University in St. Louis"
   pubmed           : 
