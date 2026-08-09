@@ -64,8 +64,8 @@ author_profile: false
       </div>
     </div>
 
-    {% assign dated_publications = site.data.research_portfolio | where_exp: "paper", "paper.type != 'Under Review'" %}
-    {% assign under_review_publications = site.data.research_portfolio | where: "type", "Under Review" %}
+    {% assign dated_publications = site.data.research_portfolio | where_exp: "paper", "paper.display_group != 'Under Review & Revision'" %}
+    {% assign under_review_publications = site.data.research_portfolio | where: "display_group", "Under Review & Revision" %}
     {% assign publications_by_year = dated_publications | group_by: "year" %}
     <div class="portfolio-years" id="portfolio-grid" aria-live="polite">
       {% for year_group in publications_by_year %}

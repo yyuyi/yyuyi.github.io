@@ -152,6 +152,7 @@
   venue: "Proceedings of the Conference on Empirical Methods in Natural Language Processing (EMNLP)"
   status: "Submitted"
   type: "CS Conference"
+  display_group: "Under Review & Revision"
   domains: ["AI Methods", "Public Health"]
   roles: ["First author"]
 
@@ -161,6 +162,7 @@
   venue: "Proceedings of the Conference on Empirical Methods in Natural Language Processing (EMNLP)"
   status: "Submitted"
   type: "CS Conference"
+  display_group: "Under Review & Revision"
   domains: ["Biomedical Research", "AI Methods"]
   roles: ["Other"]
 
@@ -170,6 +172,7 @@
   venue: "Proceedings of the Conference on Empirical Methods in Natural Language Processing (EMNLP)"
   status: "Submitted · Preprint"
   type: "CS Conference"
+  display_group: "Under Review & Revision"
   domains: ["AI Methods"]
   roles: ["Other"]
   link: "https://arxiv.org/abs/2605.05566"
@@ -180,6 +183,7 @@
   venue: "Proceedings of the Conference on Neural Information Processing Systems (NeurIPS)"
   status: "Submitted · Preprint"
   type: "CS Conference"
+  display_group: "Under Review & Revision"
   domains: ["AI Methods", "Responsible AI"]
   roles: ["Other"]
   link: "https://arxiv.org/abs/2605.15529"
@@ -230,6 +234,7 @@
   venue: "Under review"
   status: "Under review"
   type: "Under Review"
+  display_group: "Under Review & Revision"
   domains: ["AI Methods", "Public Health", "Biomedical Research"]
   roles: ["Other"]
 
@@ -239,6 +244,7 @@
   venue: "JMIR mHealth and uHealth"
   status: "Under revision"
   type: "Under Review"
+  display_group: "Under Review & Revision"
   domains: ["AI Methods", "Public Health", "Social Work & Mental Health"]
   roles: ["Second author"]
 
@@ -248,6 +254,7 @@
   venue: "PLOS Digital Health"
   status: "Under revision"
   type: "Under Review"
+  display_group: "Under Review & Revision"
   domains: ["AI Methods", "Public Health", "Biomedical Research"]
   roles: ["Second author"]
 
@@ -257,6 +264,7 @@
   venue: "arXiv"
   status: "Preprint"
   type: "Under Review"
+  display_group: "Under Review & Revision"
   domains: ["AI Methods", "Health Communication", "Public Health"]
   roles: ["Second author"]
   link: "https://arxiv.org/abs/2512.00007"
@@ -267,5 +275,6 @@
   venue: "Under review"
   status: "Under review"
   type: "Under Review"
+  display_group: "Under Review & Revision"
   domains: ["Public Health", "Biomedical Research"]
   roles: ["Other"]
