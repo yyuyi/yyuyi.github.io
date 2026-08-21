@@ -12,7 +12,7 @@ author_profile: false
       <div>
         <p class="home-eyebrow">Publications</p>
         <h1 id="portfolio-heading">An interdisciplinary publication portfolio.</h1>
-        <p class="section-intro">Journal articles, CS conference submissions, invited book chapters, preprints, and manuscripts spanning AI, public health, social work, health communication, and biomedical research.</p>
+        <p class="section-intro">Journal articles, CS conference papers and submissions, invited book chapters, preprints, and manuscripts spanning AI, public health, social work, health communication, and biomedical research.</p>
         <p class="publication-legend">My name appears in bold; * denotes corresponding authorship, and (co-first) denotes co-first authorship.</p>
       </div>
       <p class="section-count"><span id="portfolio-visible-count">{{ site.data.research_portfolio | size }}</span> of {{ site.data.research_portfolio | size }} works</p>

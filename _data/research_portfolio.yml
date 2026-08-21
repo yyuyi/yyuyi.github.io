@@ -149,9 +149,9 @@
 - year: 2026
   title: "Contingent Valuation as a Benchmark for LLM Economic Decision-Making"
   authors: "Yang Y, Huang L, Li J, Huang C, An Z, Xie Y, An R, Huang J"
-  venue: "Proceedings of the Conference on Empirical Methods in Natural Language Processing (EMNLP)"
-  status: "Submitted"
-  type: "CS Conference"
+  venue: "Manuscript under revision"
+  status: "Under revision"
+  type: "Under Review"
   display_group: "Under Review & Revision"
   domains: ["AI Methods", "Public Health"]
   roles: ["First author"]
@@ -160,9 +160,8 @@
   title: "LUMINA: LongitUdinal MultImodal reasoNing Agent for Medical Imaging"
   authors: "An Z, Xie Y, Yu X, Yang Y, Chowdhury A, Qiu P"
   venue: "Proceedings of the Conference on Empirical Methods in Natural Language Processing (EMNLP)"
-  status: "Submitted"
+  status: "Accepted"
   type: "CS Conference"
-  display_group: "Under Review & Revision"
   domains: ["Biomedical Research", "AI Methods"]
   roles: ["Other"]
 
@@ -170,9 +169,8 @@
   title: "Nonsense Helps: Prompt Space Perturbation Broadens Reasoning Exploration"
   authors: "Huang L, Huang C, Li J, Cai D, Yang Y, Huang J"
   venue: "Proceedings of the Conference on Empirical Methods in Natural Language Processing (EMNLP)"
-  status: "Submitted · Preprint"
+  status: "Accepted · Preprint"
   type: "CS Conference"
-  display_group: "Under Review & Revision"
   domains: ["AI Methods"]
   roles: ["Other"]
   link: "https://arxiv.org/abs/2605.05566"
