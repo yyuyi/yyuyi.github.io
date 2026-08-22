@@ -159,7 +159,7 @@
 - year: 2026
   title: "LUMINA: LongitUdinal MultImodal reasoNing Agent for Medical Imaging"
   authors: "An Z, Xie Y, Yu X, Yang Y, Chowdhury A, Qiu P"
-  venue: "Proceedings of the Conference on Empirical Methods in Natural Language Processing (EMNLP)"
+  venue: "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing (EMNLP 2026) · Main Conference"
   status: "Accepted"
   type: "CS Conference"
   domains: ["Biomedical Research", "AI Methods"]
@@ -168,7 +168,7 @@
 - year: 2026
   title: "Nonsense Helps: Prompt Space Perturbation Broadens Reasoning Exploration"
   authors: "Huang L, Huang C, Li J, Cai D, Yang Y, Huang J"
-  venue: "Proceedings of the Conference on Empirical Methods in Natural Language Processing (EMNLP)"
+  venue: "Findings of the Association for Computational Linguistics: EMNLP 2026"
   status: "Accepted · Preprint"
   type: "CS Conference"
   domains: ["AI Methods"]
