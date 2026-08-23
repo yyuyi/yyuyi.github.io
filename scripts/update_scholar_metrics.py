@@ -66,6 +66,41 @@ def fetch_profile(scholar_id: str) -> str:
         return response.read().decode("utf-8", errors="replace")
 
 
+def fetch_serpapi_metrics(scholar_id: str, api_key: str) -> dict[str, int]:
+    query = urllib.parse.urlencode(
+        {
+            "engine": "google_scholar_author",
+            "author_id": scholar_id,
+            "hl": "en",
+            "api_key": api_key,
+        }
+    )
+    request = urllib.request.Request(
+        f"https://serpapi.com/search.json?{query}",
+        headers={"User-Agent": "yyuyi.github.io Scholar metrics updater"},
+    )
+    with urllib.request.urlopen(request, timeout=60) as response:
+        payload = json.loads(response.read().decode("utf-8"))
+
+    if payload.get("error"):
+        raise RuntimeError(f"SerpApi returned an error: {payload['error']}")
+
+    table = payload.get("cited_by", {}).get("table", [])
+    rows: dict[str, dict[str, int]] = {}
+    for row in table:
+        if isinstance(row, dict):
+            rows.update(row)
+
+    try:
+        return {
+            "citations": int(rows["citations"]["all"]),
+            "h_index": int(rows["h_index"]["all"]),
+            "i10_index": int(rows["i10_index"]["all"]),
+        }
+    except (KeyError, TypeError, ValueError) as error:
+        raise RuntimeError("SerpApi response did not contain the expected metrics.") from error
+
+
 def parse_metrics(html: str) -> dict[str, int]:
     parser = ScholarStatsParser()
     parser.feed(html)
@@ -89,7 +124,12 @@ def main() -> int:
     if not re.fullmatch(r"[A-Za-z0-9_-]{12}", scholar_id):
         raise RuntimeError("GOOGLE_SCHOLAR_ID is not a valid 12-character profile ID.")
 
-    metrics = parse_metrics(fetch_profile(scholar_id))
+    serpapi_key = os.environ.get("SERPAPI_KEY", "").strip()
+    metrics = (
+        fetch_serpapi_metrics(scholar_id, serpapi_key)
+        if serpapi_key
+        else parse_metrics(fetch_profile(scholar_id))
+    )
     OUTPUT_PATH.write_text(json.dumps(metrics, indent=2) + "\n", encoding="utf-8")
     print(
         "Google Scholar metrics: "

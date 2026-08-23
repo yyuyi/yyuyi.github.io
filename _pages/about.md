@@ -62,7 +62,7 @@ redirect_from:
   <div class="home-metrics__heading">
     <p class="home-eyebrow">Academic impact</p>
     <h2 class="sr-only" id="academic-impact-heading">Academic impact metrics</h2>
-    <p>Citation metrics · updated daily from Google Scholar</p>
+    <p>Citation metrics · Google Scholar</p>
   </div>
 
   <div class="home-metrics__grid" data-scholar-metrics="https://raw.githubusercontent.com/yyuyi/yyuyi.github.io/master/_data/scholar_metrics.json">
