@@ -20,7 +20,7 @@ concurrency:
 
 jobs:
   update:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
       - name: Check out the website
         uses: actions/checkout@v4
