@@ -1,6 +1,12 @@
 name: Update Google Scholar metrics
 
 on:
+  push:
+    branches:
+      - master
+    paths:
+      - ".github/workflows/update-scholar-metrics.yml"
+      - "scripts/update_scholar_metrics.py"
   schedule:
     - cron: "23 10 * * *"
   workflow_dispatch:
