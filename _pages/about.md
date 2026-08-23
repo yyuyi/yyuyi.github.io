@@ -58,6 +58,19 @@ redirect_from:
   </div>
 </section>
 
+{% assign peer_reviewed_count = 0 %}
+{% for paper in site.data.research_portfolio %}
+  {% if paper.type == "Journal Publication" %}
+    {% if paper.status == "Published" or paper.status == "In press" %}
+      {% assign peer_reviewed_count = peer_reviewed_count | plus: 1 %}
+    {% endif %}
+  {% elsif paper.type == "CS Conference" %}
+    {% if paper.status contains "Accepted" or paper.status == "Published" or paper.status == "In press" %}
+      {% assign peer_reviewed_count = peer_reviewed_count | plus: 1 %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+
 <section class="home-metrics" aria-labelledby="academic-impact-heading">
   <div class="home-metrics__heading">
     <p class="home-eyebrow">Academic impact</p>
@@ -81,8 +94,8 @@ redirect_from:
       <span>i10-index</span>
       <small>Google Scholar</small>
     </a>
-    <a class="metric-card" href="{{ '/publications/' | relative_url }}" aria-label="15 peer-reviewed publications">
-      <strong>15</strong>
+    <a class="metric-card" href="{{ '/publications/' | relative_url }}" aria-label="{{ peer_reviewed_count }} peer-reviewed publications">
+      <strong>{{ peer_reviewed_count }}</strong>
       <span>Peer-reviewed publications</span>
       <small>Publication record</small>
     </a>
