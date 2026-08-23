@@ -62,22 +62,22 @@ redirect_from:
   <div class="home-metrics__heading">
     <p class="home-eyebrow">Academic impact</p>
     <h2 class="sr-only" id="academic-impact-heading">Academic impact metrics</h2>
-    <p>Research profile as of August 9, 2026</p>
+    <p>Citation metrics · updated daily from Google Scholar</p>
   </div>
 
-  <div class="home-metrics__grid">
-    <a class="metric-card" href="https://scholar.google.com/citations?user=W3SVZDYAAAAJ&amp;hl=en" aria-label="289 citations on Google Scholar">
-      <strong>289</strong>
+  <div class="home-metrics__grid" data-scholar-metrics="https://raw.githubusercontent.com/yyuyi/yyuyi.github.io/master/_data/scholar_metrics.json">
+    <a class="metric-card" data-scholar-metric="citations" href="https://scholar.google.com/citations?user=W3SVZDYAAAAJ&amp;hl=en" aria-label="{{ site.data.scholar_metrics.citations }} citations on Google Scholar">
+      <strong>{{ site.data.scholar_metrics.citations }}</strong>
       <span>Citations</span>
       <small>Google Scholar</small>
     </a>
-    <a class="metric-card" href="https://scholar.google.com/citations?user=W3SVZDYAAAAJ&amp;hl=en" aria-label="h-index of 7 on Google Scholar">
-      <strong>7</strong>
+    <a class="metric-card" data-scholar-metric="h-index" href="https://scholar.google.com/citations?user=W3SVZDYAAAAJ&amp;hl=en" aria-label="h-index of {{ site.data.scholar_metrics.h_index }} on Google Scholar">
+      <strong>{{ site.data.scholar_metrics.h_index }}</strong>
       <span>h-index</span>
       <small>Google Scholar</small>
     </a>
-    <a class="metric-card" href="https://scholar.google.com/citations?user=W3SVZDYAAAAJ&amp;hl=en" aria-label="i10-index of 7 on Google Scholar">
-      <strong>7</strong>
+    <a class="metric-card" data-scholar-metric="i10-index" href="https://scholar.google.com/citations?user=W3SVZDYAAAAJ&amp;hl=en" aria-label="i10-index of {{ site.data.scholar_metrics.i10_index }} on Google Scholar">
+      <strong>{{ site.data.scholar_metrics.i10_index }}</strong>
       <span>i10-index</span>
       <small>Google Scholar</small>
     </a>
