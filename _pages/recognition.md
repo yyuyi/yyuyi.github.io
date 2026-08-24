@@ -26,7 +26,7 @@ redirect_from:
 
       <div class="academic-stack">
         <article class="academic-panel">
-          <span class="academic-panel__label">Invited talks</span>
+          <span class="academic-panel__label">Invited Talks &amp; Lectures</span>
           <ul>{% for item in site.data.academic_activity.guest_lectures %}<li><time>{{ item.year }}</time><div><strong>{{ item.title }}</strong><span>{{ item.organization }}{% if item.organization_link %} (<a class="academic-org-link" href="{{ item.organization_link }}" target="_blank" rel="noopener noreferrer">{{ item.organization_abbreviation }}</a>) {{ item.organization_detail }}{% endif %}</span>{% if item.invited_by_link %}<a class="academic-inline-link" href="{{ item.invited_by_link }}" target="_blank" rel="noopener noreferrer">{{ item.invited_by }}</a>{% endif %}</div></li>{% endfor %}</ul>
         </article>
         <article class="academic-panel">
