@@ -50,8 +50,8 @@ author_profile: false
     <section class="presentation-category presentation-category--secondary" aria-labelledby="non-refereed-presentations-heading">
       <header class="presentation-category__header">
         <div>
-          <p class="home-eyebrow">Non-refereed</p>
-          <h2 id="non-refereed-presentations-heading">Non-Refereed Conference Presentations</h2>
+          <p class="home-eyebrow">Additional presentations</p>
+          <h2 id="non-refereed-presentations-heading">Additional Conference &amp; Symposium Presentations</h2>
         </div>
         <span>{{ site.data.academic_activity.non_refereed_presentations | size }} presentations</span>
       </header>
