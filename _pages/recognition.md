@@ -31,7 +31,7 @@ redirect_from:
         </article>
         <article class="academic-panel">
           <span class="academic-panel__label">Leadership &amp; service</span>
-          <ul>{% for item in site.data.academic_activity.service %}<li><time>{{ item.year }}</time><div><strong>{{ item.title }}</strong><span>{{ item.organization }}</span></div></li>{% endfor %}</ul>
+          <ul>{% for item in site.data.academic_activity.service %}<li><time>{{ item.year }}</time><div><strong>{% if item.title_link %}<a class="academic-title-link" href="{{ item.title_link }}" target="_blank" rel="noopener noreferrer">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}</strong><span>{{ item.organization }}</span></div></li>{% endfor %}</ul>
         </article>
       </div>
     </div>
