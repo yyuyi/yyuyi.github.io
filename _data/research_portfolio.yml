@@ -17,6 +17,16 @@
   roles: ["Second author"]
 
 - year: 2026
+  title: "Using Transformer-Based Models to Monitor and Understand Momentary Affect Intensity from Smartphone Sensors"
+  authors: "Zhu Y, Yang Y, Thompson R"
+  venue: "JMIR mHealth and uHealth"
+  status: "In press"
+  type: "Journal Publication"
+  domains: ["AI Methods", "Public Health", "Social Work & Mental Health"]
+  roles: ["Second author"]
+  link: "https://doi.org/10.2196/90970"
+
+- year: 2026
   title: "Countering HPV Vaccine Misinformation: An Integrative Cognitive-Affective Framework for Theory-Driven Digital Health Education Interventions"
   authors: "Yang Y, Yang F, An R, Luke D"
   venue: "Health Education & Behavior"
@@ -235,16 +245,6 @@
   display_group: "Under Review & Revision"
   domains: ["AI Methods", "Public Health", "Biomedical Research"]
   roles: ["Other"]
-
-- year: 2026
-  title: "Using Transformer-Based Models to Monitor and Understand Momentary Affect Intensity from Smartphone Sensors"
-  authors: "Zhu Y, Yang Y, Thompson R"
-  venue: "JMIR mHealth and uHealth"
-  status: "Under revision"
-  type: "Under Review"
-  display_group: "Under Review & Revision"
-  domains: ["AI Methods", "Public Health", "Social Work & Mental Health"]
-  roles: ["Second author"]
 
 - year: 2026
   title: "Large Language Model-Based Prediction of Severe Outcomes in VAERS Reports for Vaccine Safety Surveillance"
