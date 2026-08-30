@@ -78,7 +78,7 @@ author_profile: false
             <h3>{% if paper.link %}<a href="{{ paper.link }}" target="_blank" rel="noopener noreferrer">{{ paper.title }}</a>{% else %}{{ paper.title }}{% endif %}</h3>
             {% capture highlighted_author %}<strong>Yang Y{% if paper.roles contains 'Corresponding' %}*{% endif %}</strong>{% if paper.roles contains 'Co-first' %} (co-first){% endif %}{% endcapture %}
             <p class="portfolio-authors">{{ paper.authors | replace_first: 'Yang Y', highlighted_author }}</p>
-            <p class="portfolio-venue">{{ paper.venue }}</p>
+            {% if paper.venue %}<p class="portfolio-venue">{{ paper.venue }}</p>{% endif %}
             <div class="portfolio-card__footer">
               <div class="paper-tags">{% for domain in paper.domains %}<span>{{ domain }}</span>{% endfor %}</div>
             </div>
@@ -97,7 +97,7 @@ author_profile: false
             <h3>{% if paper.link %}<a href="{{ paper.link }}" target="_blank" rel="noopener noreferrer">{{ paper.title }}</a>{% else %}{{ paper.title }}{% endif %}</h3>
             {% capture highlighted_author %}<strong>Yang Y{% if paper.roles contains 'Corresponding' %}*{% endif %}</strong>{% if paper.roles contains 'Co-first' %} (co-first){% endif %}{% endcapture %}
             <p class="portfolio-authors">{{ paper.authors | replace_first: 'Yang Y', highlighted_author }}</p>
-            <p class="portfolio-venue">{{ paper.venue }}</p>
+            {% if paper.venue %}<p class="portfolio-venue">{{ paper.venue }}</p>{% endif %}
             <div class="portfolio-card__footer">
               <div class="paper-tags">{% for domain in paper.domains %}<span>{{ domain }}</span>{% endfor %}</div>
             </div>
