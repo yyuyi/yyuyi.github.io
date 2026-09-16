@@ -40,6 +40,7 @@ author_profile: false
           <button class="filter-chip" type="button" data-filter="Journal Publication" aria-pressed="false">Journal Publication</button>
           <button class="filter-chip" type="button" data-filter="Book Chapters" aria-pressed="false">Book Chapters</button>
           <button class="filter-chip" type="button" data-filter="Under Review" aria-pressed="false">Under Review</button>
+          <button class="filter-chip" type="button" data-filter="In Preparation" aria-pressed="false">In Preparation</button>
         </div>
       </div>
 
@@ -64,8 +65,8 @@ author_profile: false
       </div>
     </div>
 
-    {% assign dated_publications = site.data.research_portfolio | where_exp: "paper", "paper.display_group != 'Under Review & Revision'" %}
-    {% assign under_review_publications = site.data.research_portfolio | where: "display_group", "Under Review & Revision" %}
+    {% assign dated_publications = site.data.research_portfolio | where_exp: "paper", "paper.display_group != 'Under Review & Revision'" | where_exp: "paper", "paper.display_group != 'In Preparation'" %}
+    {% assign manuscript_groups = 'Under Review & Revision|In Preparation' | split: '|' %}
     {% assign publications_by_year = dated_publications | group_by: "year" %}
     <div class="portfolio-years" id="portfolio-grid" aria-live="polite">
       {% for year_group in publications_by_year %}
@@ -73,38 +74,26 @@ author_profile: false
         <h2 id="publications-{{ year_group.name }}">{{ year_group.name }}</h2>
         <div class="portfolio-grid">
           {% for paper in year_group.items %}
-          <article class="portfolio-card" data-year="{{ paper.year }}" data-type="{{ paper.type }}" data-domains="{{ paper.domains | join: '|' }}" data-roles="{{ paper.roles | join: '|' }}" data-title="{{ paper.title | downcase | escape }}" data-search="{{ paper.title | escape }} {{ paper.authors | escape }} {{ paper.venue | escape }} {{ paper.domains | join: ' ' | escape }} {{ paper.type | escape }}">
-            <div class="portfolio-card__meta"><span class="paper-number">{{ forloop.index | prepend: '0' | slice: -2, 2 }}</span><span class="paper-type">{{ paper.type }}</span><span>{{ paper.status }}</span></div>
-            <h3>{% if paper.link %}<a href="{{ paper.link }}" target="_blank" rel="noopener noreferrer">{{ paper.title }}</a>{% else %}{{ paper.title }}{% endif %}</h3>
-            {% capture highlighted_author %}<strong>Yang Y{% if paper.roles contains 'Corresponding' %}*{% endif %}</strong>{% if paper.roles contains 'Co-first' %} (co-first){% endif %}{% endcapture %}
-            <p class="portfolio-authors">{{ paper.authors | replace_first: 'Yang Y', highlighted_author }}</p>
-            {% if paper.venue %}<p class="portfolio-venue">{{ paper.venue }}</p>{% endif %}
-            <div class="portfolio-card__footer">
-              <div class="paper-tags">{% for domain in paper.domains %}<span>{{ domain }}</span>{% endfor %}</div>
-            </div>
-          </article>
+          {% include portfolio-card.html paper=paper number=forloop.index %}
           {% endfor %}
         </div>
       </section>
       {% endfor %}
 
-      <section class="portfolio-year-group portfolio-status-group" data-fixed-position="last" aria-labelledby="publications-under-review">
-        <h2 id="publications-under-review">Under Review &amp; Revision</h2>
+      {% for manuscript_group in manuscript_groups %}
+      {% assign manuscripts = site.data.research_portfolio | where: 'display_group', manuscript_group %}
+      {% if manuscripts.size > 0 %}
+      {% if manuscript_group == 'Under Review & Revision' %}{% assign group_id = 'publications-under-review' %}{% else %}{% assign group_id = 'publications-in-preparation' %}{% endif %}
+      <section class="portfolio-year-group portfolio-status-group" data-fixed-position="last" aria-labelledby="{{ group_id }}">
+        <h2 id="{{ group_id }}">{{ manuscript_group | escape }}</h2>
         <div class="portfolio-grid">
-          {% for paper in under_review_publications %}
-          <article class="portfolio-card" data-year="{{ paper.year }}" data-type="{{ paper.type }}" data-domains="{{ paper.domains | join: '|' }}" data-roles="{{ paper.roles | join: '|' }}" data-title="{{ paper.title | downcase | escape }}" data-search="{{ paper.title | escape }} {{ paper.authors | escape }} {{ paper.venue | escape }} {{ paper.domains | join: ' ' | escape }} {{ paper.type | escape }}">
-            <div class="portfolio-card__meta"><span class="paper-number">{{ forloop.index | prepend: '0' | slice: -2, 2 }}</span><span class="paper-type">{{ paper.type }}</span><span>{{ paper.status }}</span></div>
-            <h3>{% if paper.link %}<a href="{{ paper.link }}" target="_blank" rel="noopener noreferrer">{{ paper.title }}</a>{% else %}{{ paper.title }}{% endif %}</h3>
-            {% capture highlighted_author %}<strong>Yang Y{% if paper.roles contains 'Corresponding' %}*{% endif %}</strong>{% if paper.roles contains 'Co-first' %} (co-first){% endif %}{% endcapture %}
-            <p class="portfolio-authors">{{ paper.authors | replace_first: 'Yang Y', highlighted_author }}</p>
-            {% if paper.venue %}<p class="portfolio-venue">{{ paper.venue }}</p>{% endif %}
-            <div class="portfolio-card__footer">
-              <div class="paper-tags">{% for domain in paper.domains %}<span>{{ domain }}</span>{% endfor %}</div>
-            </div>
-          </article>
+          {% for paper in manuscripts %}
+          {% include portfolio-card.html paper=paper number=forloop.index %}
           {% endfor %}
         </div>
       </section>
+      {% endif %}
+      {% endfor %}
     </div>
     <p class="portfolio-empty" id="portfolio-empty" hidden>No publications match these filters.</p>
   </div>

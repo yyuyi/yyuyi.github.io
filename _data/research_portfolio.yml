@@ -47,7 +47,7 @@
   link: "https://dgsjournal.org/wp-content/uploads/2026/04/voices-2.pdf"
 
 - year: 2025
-  title: "Use of Retrieval-augmented Large Language Model for COVID-19 Fact-checking"
+  title: "Use of Retrieval-Augmented Large Language Model for COVID-19 Fact-Checking: Development and Usability Study"
   authors: "Li H, Huang J, Ji M, Yang Y, An R"
   venue: "Journal of Medical Internet Research"
   status: "Published"
@@ -106,7 +106,8 @@
   roles: ["First author", "Corresponding"]
   link: "https://doi.org/10.3390/nu15194269"
 
-- year: 2023
+- year: 2024
+  # Formal issue: 13(3), 428–441; first published online 2023-09-29 (PMID 37777066).
   title: "A Scoping Review of Methodologies for Applying Artificial Intelligence to Physical Activity Interventions"
   authors: "An R, Shen J, Wang J, Yang Y"
   venue: "Journal of Sport and Health Science"
@@ -148,7 +149,8 @@
 
 - year: 2021
   title: "[Research process of Gasdermin E in inducing cell pyroptosis]"
-  authors: "Yang Y, Liu X"
+  authors: "Yang YY, Liu XP"
+  self_author: "Yang YY"
   venue: "Chinese Journal of Pathology"
   status: "Published"
   type: "Journal Publication"
@@ -159,10 +161,10 @@
 - year: 2026
   title: "Contingent Valuation as a Benchmark for LLM Economic Decision-Making"
   authors: "Yang Y, Huang L, Li J, Huang C, An Z, Xie Y, An R, Huang J"
-  venue: "Manuscript under revision"
-  status: "Under revision"
-  type: "Under Review"
-  display_group: "Under Review & Revision"
+  venue: "Manuscript in preparation"
+  status: "In preparation"
+  type: "In Preparation"
+  display_group: "In Preparation"
   domains: ["AI Methods", "Public Health"]
   roles: ["First author"]
 
@@ -187,8 +189,8 @@
 
 - year: 2026
   title: "Process Rewards with Learned Reliability"
-  authors: "Li J, Huang L, Huang C, Xu S, Cai D, Yang Y, Zhang M, Huang J"
-  venue: "Proceedings of the Conference on Neural Information Processing Systems (NeurIPS)"
+  authors: "Li J, Huang L, Huang C, Xu S, Cai D, Yang Y, Zhang W, Huang J"
+  venue: "Submitted to NeurIPS 2026; arXiv preprint."
   status: "Submitted · Preprint"
   type: "Under Review"
   display_group: "Under Review & Revision"
@@ -217,7 +219,7 @@
   link: "https://doi.org/10.1007/978-3-032-18443-6_21"
 
 - year: 2026
-  title: "Conclusion—Challenges and Opportunities for AI in Social Work"
+  title: "Conclusion: Challenges and Opportunities for AI in Social Work"
   authors: "Yang Y, An R, Lindsey MA"
   venue: "In: An R, Lindsey MA (Eds.) · Artificial Intelligence in Social Work: Bridging Technology and Humanity · Springer"
   status: "Published"
@@ -226,7 +228,8 @@
   roles: ["First author", "Corresponding"]
   link: "https://doi.org/10.1007/978-3-032-18443-6_24"
 
-- year: 2025
+- year: 2026
+  # Formal book edition, pp. 1322–1330, replaces the 2025 living-reference version; count once.
   title: "Dementia Care and Generative Artificial Intelligence"
   authors: "Yang Y, An R"
   venue: "In: Bennett G, Goodall E (Eds.) · The Palgrave Encyclopedia of Disability · Palgrave Macmillan, Cham"
@@ -234,7 +237,7 @@
   type: "Book Chapters"
   domains: ["Public Health", "Social Work & Mental Health"]
   roles: ["First author", "Corresponding"]
-  link: "https://doi.org/10.1007/978-3-031-40858-8_528-1"
+  link: "https://doi.org/10.1007/978-3-032-11375-7_528"
 
 - year: 2026
   title: "Comparing Large Language Models and Machine Learning for Diabetes Prediction in Data-Limited Public Health Contexts"
