@@ -2,7 +2,7 @@
 layout: home
 permalink: /
 title: "Yuyi Yang"
-excerpt: "Agentic AI, public health, and human-centered decision-making"
+excerpt: "Yuyi Yang is a PhD candidate at Washington University in St. Louis researching agentic AI, public health, and human-centered decision-making."
 author_profile: false
 redirect_from:
   - /about/
@@ -12,11 +12,11 @@ redirect_from:
 <section class="home-hero home-hero--standalone" aria-labelledby="home-name">
   <div class="home-hero__inner">
     <div class="home-hero__copy">
-      <p class="home-eyebrow">PhD Student · Computational and Data Sciences</p>
+      <p class="home-eyebrow">PhD Candidate · Computational and Data Sciences</p>
       <h1 class="home-name" id="home-name">Yuyi <em>Yang</em></h1>
       <p class="home-tagline">Building <span>responsible AI</span> for public health, social science, and human decision-making.</p>
       <p class="home-intro">
-        I am a PhD student in Computational and Data Sciences at Washington University in St. Louis and a McDonnell International Scholar. My research brings together agentic AI, qualitative inquiry, public health, and human-centered decision-making.
+        I am a PhD candidate in Computational and Data Sciences at Washington University in St. Louis and a McDonnell International Scholar. My research brings together agentic AI, qualitative inquiry, public health, and human-centered decision-making.
       </p>
       <p class="home-advisors">
         Advised by <a href="https://socialwork.nyu.edu/faculty-and-research/our-faculty/ruopeng-an.html">Dr. Ruopeng An</a> and <a href="https://engineering.washu.edu/faculty/Jiaxin-Huang.html">Dr. Jiaxin Huang</a>.
@@ -75,7 +75,7 @@ redirect_from:
   <div class="home-metrics__heading">
     <p class="home-eyebrow">Academic impact</p>
     <h2 class="sr-only" id="academic-impact-heading">Academic impact metrics</h2>
-    <p>Citation metrics · Google Scholar</p>
+    <p>Google Scholar · Daily sync</p>
   </div>
 
   <div class="home-metrics__grid" data-scholar-metrics="https://raw.githubusercontent.com/yyuyi/yyuyi.github.io/master/_data/scholar_metrics.json">
@@ -100,32 +100,33 @@ redirect_from:
       <small>Publication record</small>
     </a>
   </div>
+  <p class="home-metrics__note">Publication count includes published and in-press journal articles and accepted CS conference papers; excludes book chapters and manuscripts under review or in preparation.</p>
 </section>
 
 <section class="home-content section-page-block" id="research" aria-labelledby="research-heading">
   <header class="home-section-heading section-page-heading">
     <p class="home-eyebrow">Research</p>
-    <h2 id="research-heading">AI designed to complement rigorous human inquiry.</h2>
-    <p>I develop and evaluate agentic AI systems for qualitative inquiry, public health simulation, and human-centered decision-making across social and healthcare contexts.</p>
+    <h2 id="research-heading">AI in service of human inquiry.</h2>
+    <p>Three connected directions in qualitative research, decision-making, and public health.</p>
   </header>
 
   <div class="research-grid">
     <article class="research-card">
       <span class="research-card__number">01</span>
       <h3>AI-Assisted Qualitative Research</h3>
-      <p>I examine how large language models can support thematic analysis, grounded theory coding, and constant comparative analysis—where they approximate expert interpretation, where they diverge, and how retrieval, multi-agent workflows, audit trails, and human evaluation can make their use transparent and methodologically sound.</p>
+      <p>I develop and evaluate LLM-assisted workflows for thematic analysis and grounded theory coding. My work examines how retrieval, multi-agent collaboration, and transparent audit trails can support rigorous qualitative inquiry.</p>
     </article>
 
     <article class="research-card">
       <span class="research-card__number">02</span>
       <h3>Simulation &amp; Decision-Making</h3>
-      <p>I develop LLM-based frameworks that simulate economic preferences, survey responses, policy reasoning, behavioral dynamics, information diffusion, and collective decision-making. This work evaluates both the promise and limits of AI agents as models of complex human and population-level systems.</p>
+      <p>I study how LLM agents simulate economic preferences, survey responses, and health-related decisions. I compare their behavior with empirical evidence to understand when these simulations are informative—and where they fall short.</p>
     </article>
 
     <article class="research-card">
       <span class="research-card__number">03</span>
       <h3>Responsible AI for Health</h3>
-      <p>I develop reliable, interpretable, and culturally sensitive AI for mental health, digital health, vaccine safety surveillance, health communication, and public health education—grounded in rigorous evaluation, traceability, ethical accountability, and practical utility.</p>
+      <p>I evaluate AI applications in mental health, vaccine safety, and health communication, focusing on reliability, interpretability, and accountability. My goal is to support tools that remain responsive to the people and settings they serve.</p>
     </article>
   </div>
 

@@ -14,6 +14,43 @@
     var count = document.getElementById("portfolio-visible-count");
     var empty = document.getElementById("portfolio-empty");
     var active = { domain: "all", type: "all", role: "all" };
+    var filterToggle = document.getElementById("portfolio-filter-toggle");
+    var filterControls = document.getElementById("portfolio-controls");
+
+    // Keep filters available without JavaScript; enhance only the mobile layout.
+    if (filterToggle && filterControls && window.matchMedia) {
+      var mobileLayout = window.matchMedia("(max-width: 800px)");
+      var mobileFiltersExpanded = false;
+
+      function updateFilterPanel() {
+        var expanded = !mobileLayout.matches || mobileFiltersExpanded;
+        filterToggle.hidden = !mobileLayout.matches;
+        filterToggle.setAttribute("aria-expanded", expanded ? "true" : "false");
+        if (!expanded && filterControls.contains(document.activeElement)) {
+          filterToggle.focus();
+        }
+        filterControls.hidden = !expanded;
+      }
+
+      filterToggle.addEventListener("click", function () {
+        mobileFiltersExpanded = !mobileFiltersExpanded;
+        updateFilterPanel();
+      });
+
+      filterControls.addEventListener("keydown", function (event) {
+        if (event.key === "Escape" && mobileLayout.matches && mobileFiltersExpanded) {
+          mobileFiltersExpanded = false;
+          updateFilterPanel();
+        }
+      });
+
+      if (mobileLayout.addEventListener) {
+        mobileLayout.addEventListener("change", updateFilterPanel);
+      } else {
+        mobileLayout.addListener(updateFilterPanel);
+      }
+      updateFilterPanel();
+    }
 
     function normalize(value) {
       return (value || "").toLowerCase().replace(/\s+/g, " ").trim();

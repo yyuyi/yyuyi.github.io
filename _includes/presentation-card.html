@@ -1,0 +1,29 @@
+{% assign presentation = include.item %}
+{% assign is_upcoming = false %}
+{% if presentation.status == 'Upcoming' and presentation.start_date > include.today %}{% assign is_upcoming = true %}{% endif %}
+<article class="presentation-card">
+  <div class="presentation-card__meta">
+    <span class="presentation-card__number">{{ include.number | prepend: '0' | slice: -2, 2 }}</span>
+    {% if is_upcoming %}<span class="presentation-card__status">Upcoming</span>{% elsif presentation.status and presentation.status != 'Upcoming' %}<span class="presentation-card__status">{{ presentation.status | escape }}</span>{% endif %}
+    {% if presentation.contribution_type %}<span class="presentation-card__contribution-type">{{ presentation.contribution_type | escape }}</span>{% endif %}
+  </div>
+  <h4>{{ presentation.title | escape }}</h4>
+  <p>{{ presentation.venue | escape }}</p>
+  {% if presentation.start_date %}
+  <p class="presentation-card__date">
+    {% if presentation.end_date and presentation.end_date != presentation.start_date %}
+      {% assign start_month = presentation.start_date | date: '%Y-%m' %}
+      {% assign end_month = presentation.end_date | date: '%Y-%m' %}
+      {% if start_month == end_month %}<time datetime="{{ presentation.start_date }}">{{ presentation.start_date | date: '%B %-d' }}</time>–<time datetime="{{ presentation.end_date }}">{{ presentation.end_date | date: '%-d, %Y' }}</time>{% else %}<time datetime="{{ presentation.start_date }}">{{ presentation.start_date | date: '%B %-d, %Y' }}</time> – <time datetime="{{ presentation.end_date }}">{{ presentation.end_date | date: '%B %-d, %Y' }}</time>{% endif %}
+    {% else %}
+      <time datetime="{{ presentation.start_date }}">{{ presentation.start_date | date: '%B %-d, %Y' }}</time>
+    {% endif %}
+  </p>
+  {% endif %}
+  {% if presentation.presented_by or presentation.contribution %}
+  <div class="presentation-card__contribution">
+    {% if presentation.presented_by %}<p>Presented by {{ presentation.presented_by | escape }}</p>{% endif %}
+    {% if presentation.contribution %}<p>Contribution: {{ presentation.contribution | escape }}</p>{% endif %}
+  </div>
+  {% endif %}
+</article>

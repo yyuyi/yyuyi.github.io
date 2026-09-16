@@ -11,7 +11,7 @@ author_profile: false
     <header class="section-heading-row">
       <div>
         <p class="home-eyebrow">Experience</p>
-        <h1 id="experience-heading">Connecting medicine, public health, social work, and artificial intelligence.</h1>
+        <h1 id="experience-heading">Education &amp; experience.</h1>
         <p class="section-intro">My interdisciplinary path spans academic research and teaching, clinical experience, healthcare investment, and applied AI.</p>
       </div>
     </header>
@@ -19,7 +19,7 @@ author_profile: false
     <section class="education-block" aria-labelledby="education-heading">
       <header class="education-block__heading">
         <p class="home-eyebrow">Education</p>
-        <h2 id="education-heading">Academic training across medicine, public health, and computational data science.</h2>
+        <h2 id="education-heading">Academic training.</h2>
       </header>
       <div class="education-strip">
         {% for item in site.data.experience.education %}
@@ -38,7 +38,7 @@ author_profile: false
     <section class="experience-area" aria-labelledby="academic-experience-heading">
       <header class="experience-area__heading">
         <p class="home-eyebrow">Academic Experience</p>
-        <h2 id="academic-experience-heading">Teaching and research at the intersection of AI, health, and social science.</h2>
+        <h2 id="academic-experience-heading">Teaching &amp; research.</h2>
       </header>
 
       <div class="academic-experience-layout">
@@ -73,7 +73,7 @@ author_profile: false
     <section class="experience-area experience-area--professional" aria-labelledby="professional-experience-heading">
       <header class="experience-area__heading">
         <p class="home-eyebrow">Professional Experience</p>
-        <h2 id="professional-experience-heading">Applying technical and analytical expertise across AI, healthcare investment, and clinical settings.</h2>
+        <h2 id="professional-experience-heading">Industry &amp; clinical experience.</h2>
       </header>
       <div class="professional-experience-grid">
         {% for item in site.data.experience.professional %}

@@ -1,37 +1,28 @@
 ---
-layout: archive
+layout: home
 title: "Sitemap"
 permalink: /sitemap/
-author_profile: true
+excerpt: "Find the main pages on Yuyi Yang’s personal academic website"
+author_profile: false
 ---
 
-{% include base_path %}
-
-A list of all the posts and pages found on the site. For you robots out there is an [XML version]({{ base_path }}/sitemap.xml) available for digesting as well.
-
-<h2>Pages</h2>
-{% for post in site.pages %}
-  {% include archive-single.html %}
-{% endfor %}
-
-<h2>Posts</h2>
-{% for post in site.posts %}
-  {% include archive-single.html %}
-{% endfor %}
-
-{% capture written_label %}'None'{% endcapture %}
-
-{% for collection in site.collections %}
-{% unless collection.output == false or collection.label == "posts" %}
-  {% capture label %}{{ collection.label }}{% endcapture %}
-  {% if label != written_label %}
-  <h2>{{ label }}</h2>
-  {% capture written_label %}{{ label }}{% endcapture %}
-  {% endif %}
-{% endunless %}
-{% for post in collection.docs %}
-  {% unless collection.output == false or collection.label == "posts" %}
-  {% include archive-single.html %}
-  {% endunless %}
-{% endfor %}
-{% endfor %}
+<section class="section-page-section information-page" aria-labelledby="sitemap-heading">
+  <div class="section-shell">
+    <header class="section-heading-row">
+      <div>
+        <p class="home-eyebrow">Sitemap</p>
+        <h1 id="sitemap-heading">Find your way around.</h1>
+      </div>
+    </header>
+    <div class="information-page__content">
+      <ul>
+        <li><a href="{{ '/' | relative_url }}">Homepage</a></li>
+        {% for link in site.data.navigation.main %}
+        <li><a href="{{ link.url | relative_url }}">{{ link.title }}</a></li>
+        {% endfor %}
+        <li><a href="{{ '/terms/' | relative_url }}">Privacy</a></li>
+      </ul>
+      <p>An <a href="{{ '/sitemap.xml' | relative_url }}">XML sitemap</a> is also available.</p>
+    </div>
+  </div>
+</section>

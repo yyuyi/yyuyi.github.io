@@ -27,8 +27,8 @@ layout: compress
     </div>
 
     {% include scripts.html %}
-    <script src="{{ '/assets/js/research-portfolio.js' | relative_url }}" defer></script>
-    <script src="{{ '/assets/js/scholar-metrics.js' | relative_url }}" defer></script>
+    <script src="{{ '/assets/js/research-portfolio.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
+    <script src="{{ '/assets/js/scholar-metrics.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
     {% include visitor-tracker.html %}
   </body>
 </html>

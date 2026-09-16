@@ -2,7 +2,7 @@
 layout: home
 permalink: /presentations/
 title: "Conference Presentations"
-excerpt: "Selected poster and oral presentations at conferences, annual meetings, and research symposia"
+excerpt: "Selected presentations and co-authored contributions at conferences, annual meetings, and research symposia"
 author_profile: false
 ---
 
@@ -11,13 +11,19 @@ author_profile: false
     {% assign refereed_count = site.data.academic_activity.refereed_presentations | size %}
     {% assign non_refereed_count = site.data.academic_activity.non_refereed_presentations | size %}
     {% assign total_presentations = refereed_count | plus: non_refereed_count %}
+    {% assign presentation_today = site.time | date: '%Y-%m-%d' %}
+    {% assign all_contributions = site.data.academic_activity.refereed_presentations | concat: site.data.academic_activity.non_refereed_presentations %}
+    {% assign upcoming_count = 0 %}
+    {% for contribution in all_contributions %}
+      {% if contribution.status == 'Upcoming' and contribution.start_date > presentation_today %}{% assign upcoming_count = upcoming_count | plus: 1 %}{% endif %}
+    {% endfor %}
     <header class="section-heading-row">
       <div>
         <p class="home-eyebrow">Conference presentations</p>
         <h1 id="presentations-heading">Research shared across scholarly communities.</h1>
-        <p class="section-intro">Selected poster and oral presentations at conferences, annual meetings, and research symposia.</p>
+        <p class="section-intro">Selected presentations and co-authored contributions at conferences, annual meetings, and research symposia.</p>
       </div>
-      <p class="section-count">{{ total_presentations }} presentations</p>
+      <p class="section-count">{{ total_presentations }} conference contributions{% if upcoming_count > 0 %} · {{ upcoming_count }} upcoming{% endif %}</p>
     </header>
 
     <section class="presentation-category" aria-labelledby="refereed-presentations-heading">
@@ -26,7 +32,7 @@ author_profile: false
           <p class="home-eyebrow">Refereed</p>
           <h2 id="refereed-presentations-heading">Refereed Conference Presentations</h2>
         </div>
-        <span>{{ site.data.academic_activity.refereed_presentations | size }} presentations</span>
+        <span>{{ refereed_count }} contributions</span>
       </header>
       {% assign refereed_by_year = site.data.academic_activity.refereed_presentations | group_by: "year" %}
       <div class="presentation-years">
@@ -35,12 +41,8 @@ author_profile: false
           <h3 id="refereed-presentations-{{ year_group.name }}">{{ year_group.name }}</h3>
           <div class="presentation-grid">
             {% for item in year_group.items %}
-            <article class="presentation-card">
-              <span>{{ forloop.index | prepend: '0' | slice: -2, 2 }}</span>
-              <h4>{{ item.title }}</h4>
-              <p>{{ item.venue }}</p>
-            </article>
-          {% endfor %}
+            {% include presentation-card.html item=item number=forloop.index today=presentation_today %}
+            {% endfor %}
           </div>
         </section>
         {% endfor %}
@@ -53,7 +55,7 @@ author_profile: false
           <p class="home-eyebrow">Additional presentations</p>
           <h2 id="non-refereed-presentations-heading">Additional Conference &amp; Symposium Presentations</h2>
         </div>
-        <span>{{ site.data.academic_activity.non_refereed_presentations | size }} presentations</span>
+        <span>{{ non_refereed_count }} contributions</span>
       </header>
       {% assign non_refereed_by_year = site.data.academic_activity.non_refereed_presentations | group_by: "year" %}
       <div class="presentation-years">
@@ -62,11 +64,7 @@ author_profile: false
           <h3 id="non-refereed-presentations-{{ year_group.name }}">{{ year_group.name }}</h3>
           <div class="presentation-grid">
             {% for item in year_group.items %}
-            <article class="presentation-card">
-              <span>{{ forloop.index | prepend: '0' | slice: -2, 2 }}</span>
-              <h4>{{ item.title }}</h4>
-              <p>{{ item.venue }}</p>
-            </article>
+            {% include presentation-card.html item=item number=forloop.index today=presentation_today %}
             {% endfor %}
           </div>
         </section>

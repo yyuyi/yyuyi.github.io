@@ -2,7 +2,7 @@
 layout: home
 permalink: /visitors/
 title: "Visitors Worldwide"
-excerpt: "A live map showing where visitors to Yuyi Yang’s website are located"
+excerpt: "A live map of approximate locations of visitors to Yuyi Yang’s website"
 author_profile: false
 ---
 
@@ -27,5 +27,6 @@ author_profile: false
         </div>
       {% endif %}
     </div>
+    <p class="visitor-map-note">Map provided by <a href="https://mapmyvisitors.com/">MapMyVisitors</a>. Locations are approximate. <a href="{{ '/terms/' | relative_url }}">Privacy information</a>.</p>
   </div>
 </section>

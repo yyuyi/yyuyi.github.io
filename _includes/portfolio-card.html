@@ -2,8 +2,10 @@
 {% assign self_author = paper.self_author | default: 'Yang Y' %}
 {% assign author_highlighted = false %}
 {% assign author_list = paper.authors | split: ', ' %}
+{% assign paper_type_key = paper.type | downcase | strip %}
+{% assign paper_status_key = paper.status | downcase | strip %}
 <article class="portfolio-card" data-year="{{ paper.year }}" data-type="{{ paper.type | escape }}" data-domains="{{ paper.domains | join: '|' | escape }}" data-roles="{{ paper.roles | join: '|' | escape }}" data-title="{{ paper.title | downcase | escape }}" data-search="{{ paper.title | escape }} {{ paper.authors | escape }} {{ paper.venue | escape }} {{ paper.domains | join: ' ' | escape }} {{ paper.type | escape }}">
-  <div class="portfolio-card__meta"><span class="paper-number">{{ include.number | prepend: '0' | slice: -2, 2 }}</span><span class="paper-type">{{ paper.type }}</span><span>{{ paper.status }}</span></div>
+  <div class="portfolio-card__meta"><span class="paper-number">{{ include.number | prepend: '0' | slice: -2, 2 }}</span><span class="paper-type">{{ paper.type | escape }}</span>{% if paper_status_key != '' and paper_status_key != paper_type_key %}<span>{{ paper.status | escape }}</span>{% endif %}</div>
   <h3>{% if paper.link %}<a href="{{ paper.link | escape }}" target="_blank" rel="noopener noreferrer">{{ paper.title | escape }}</a>{% else %}{{ paper.title | escape }}{% endif %}</h3>
   <p class="portfolio-authors">{% for author in author_list %}{% if author == self_author and author_highlighted == false %}<strong>{{ author | escape }}{% if paper.roles contains 'Corresponding' %}*{% endif %}</strong>{% if paper.roles contains 'Co-first' %} (co-first){% endif %}{% assign author_highlighted = true %}{% else %}{{ author | escape }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
   {% if paper.venue %}<p class="portfolio-venue">{{ paper.venue | escape }}</p>{% endif %}

@@ -7,10 +7,10 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Academic Homepage"
-title_separator          : "-"
+title                    : "Yuyi Yang"
+title_separator          : "|"
 name                     : &name "Yuyi Yang"
-description              : &description "Agentic AI, public health, health economics, and social systems"
+description              : &description "Yuyi Yang is a PhD candidate in Computational and Data Sciences at Washington University in St. Louis, researching agentic AI, public health, and human-centered decision-making."
 url                      : https://yyuyi.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "yyuyi/yyuyi.github.io"
@@ -69,18 +69,21 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 :  # Open Graph/Twitter default site image
+og_image                 : "Yuyi.jpg" # Default sharing image, relative to /images/.
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+  type                   : "Person"
+  name                   : "Yuyi Yang"
+  links:
+    - "https://scholar.google.com/citations?user=W3SVZDYAAAAJ&hl=en"
+    - "https://www.linkedin.com/in/yuyi-yang"
+    - "https://orcid.org/0000-0002-7625-810X"
 
 
 # Analytics
 analytics:
-  provider               :  "google-universal" # false (default), "google", "google-universal", "custom"
+  provider               : false # Visitor analytics are provided by MapMyVisitors.
   google:
     tracking_id          :
 
@@ -89,7 +92,7 @@ analytics:
 author:
   name             : "Yuyi Yang"
   avatar           : "Yuyi.jpg"
-  bio              : "PhD student in Computational and Data Sciences developing agentic AI for public health, health economics, and social systems"
+  bio              : "PhD candidate in Computational and Data Sciences developing agentic AI for public health and human-centered decision-making"
   location         : "St. Louis, MO, USA"
   employer         : "Washington University in St. Louis"
   pubmed           : 
@@ -153,6 +156,34 @@ exclude:
   - package.json
   - tmp
   - vendor
+  # Keep template/demo sources and the superseded CV in Git, but never publish them.
+  - _posts
+  - _talks
+  - _teaching
+  - _portfolio
+  - _pages/archive-layout-with-content.md
+  - _pages/category-archive.html
+  - _pages/collection-archive.html
+  - _pages/markdown.md
+  - _pages/non-menu-page.md
+  - _pages/page-archive.html
+  - _pages/portfolio.html
+  - _pages/tag-archive.html
+  - _pages/talkmap.html
+  - _pages/talks.html
+  - _pages/teaching.html
+  - _pages/year-archive.html
+  - files/Resume_github.pdf
+  - files/paper1.pdf
+  - files/paper2.pdf
+  - files/paper3.pdf
+  - talkmap
+  - talkmap.py
+  - talkmap.ipynb
+  - markdown_generator
+  - scripts
+  - CONTRIBUTING.md
+  - CHANGELOG.md
 keep_files:
   - .git
   - .svn

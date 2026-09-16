@@ -11,14 +11,16 @@ author_profile: false
     <header class="section-heading-row">
       <div>
         <p class="home-eyebrow">Publications</p>
-        <h1 id="portfolio-heading">An interdisciplinary publication portfolio.</h1>
-        <p class="section-intro">Journal articles, CS conference papers and submissions, invited book chapters, preprints, and manuscripts spanning AI, public health, social work, health communication, and biomedical research.</p>
+        <h1 id="portfolio-heading">Research across disciplines.</h1>
+        <p class="section-intro">Journal articles, CS conference papers, book chapters, and works in progress.</p>
         <p class="publication-legend">My name appears in bold; * denotes corresponding authorship, and (co-first) denotes co-first authorship.</p>
       </div>
       <p class="section-count"><span id="portfolio-visible-count">{{ site.data.research_portfolio | size }}</span> of {{ site.data.research_portfolio | size }} works</p>
     </header>
 
-    <div class="portfolio-controls" aria-label="Filter research portfolio">
+    <div class="portfolio-filter-panel">
+      <button class="portfolio-filter-toggle" id="portfolio-filter-toggle" type="button" aria-controls="portfolio-controls" aria-expanded="true" hidden>Filter &amp; sort</button>
+      <div class="portfolio-controls" id="portfolio-controls" aria-label="Filter research portfolio">
       <div class="filter-row" data-filter-group="domain">
         <span class="filter-label">Field</span>
         <div class="filter-options">
@@ -63,6 +65,7 @@ author_profile: false
           <option value="oldest">Oldest first</option>
         </select>
       </div>
+    </div>
     </div>
 
     {% assign dated_publications = site.data.research_portfolio | where_exp: "paper", "paper.display_group != 'Under Review & Revision'" | where_exp: "paper", "paper.display_group != 'In Preparation'" %}

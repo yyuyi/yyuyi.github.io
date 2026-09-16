@@ -1,39 +1,32 @@
 ---
+layout: home
 permalink: /terms/
-title: "Terms and Privacy Policy"
-modified: 2016-06-06
+title: "Privacy"
+excerpt: "How this website uses hosting, visitor analytics, and external services"
+author_profile: false
 ---
 
-{% include base_path %}
-{% include toc %}
+<section class="section-page-section information-page" aria-labelledby="privacy-heading">
+  <div class="section-shell">
+    <header class="section-heading-row">
+      <div>
+        <p class="home-eyebrow">Privacy</p>
+        <h1 id="privacy-heading">About your visit.</h1>
+        <p class="section-intro">This notice describes the services used by Yuyi Yang’s personal academic website.</p>
+      </div>
+    </header>
 
-## Privacy Policy
+    <div class="information-page__content">
+      <h2>Hosting and external resources</h2>
+      <p>This website is hosted on GitHub Pages. Your browser connects to GitHub to load its pages and to retrieve the public citation-metrics data displayed on the homepage. Some supporting resources are loaded from external content delivery services. These requests disclose ordinary connection information, including your IP address, to the service receiving them. See <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub’s Privacy Statement</a> for its practices.</p>
 
-The privacy of my visitors is extremely important. This Privacy Policy outlines the types of personal information that is received and collected and how it is used.
+      <h2>Visitor map</h2>
+      <p>The published website loads <a href="https://mapmyvisitors.com/">MapMyVisitors</a> on each page to record visits and display the map on the Visitors page. Loading the widget connects your browser to MapMyVisitors, which receives your IP address and request information. The geographic locations shown on the map are approximate, not precise physical locations.</p>
+      <p>The map and its statistics are provided by MapMyVisitors. This website does not set the provider’s data-retention practices. Browser privacy settings, blocked scripts, or service availability may affect which visits appear.</p>
 
-First and foremost, I will never share your email address or any other personal information to anyone without your direct consent.
-
-### Log Files
-
-Like many other websites, this site uses log files to help learn about when, from where, and how often traffic flows to this site. The information in these log files include:
-
-* Internet Protocol addresses (IP)
-* Types of browser
-* Internet Service Provider (ISP)
-* Date and time stamp
-* Referring and exit pages
-* Number of clicks
-
-All of this information is not linked to anything that is personally identifiable.
-
-### Cookies and Web Beacons
-
-When you visit this site "convenience" cookies are stored on your computer when you submit a comment to help you log in faster to [Disqus](http://disqus.com) the next time you leave a comment.
-
-Third-party advertisers may also place and read cookies on your browser and/or use web beacons to collect information. This site has no access or control over these cookies. You should review the respective privacy policies on any and all third-party ad servers for more information regarding their practices and how to opt-out.
-
-If you wish to disable cookies, you may do so through your web browser options. Instructions for doing so can be found on the specific web browsers' websites.
-
-#### Google Analytics
-
-Google Analytics is a web analytics tool I use to help understand how visitors engage with this website. It reports website trends using cookies and web beacons without identifying individual visitors. You can read [Google Analytics Privacy Policy](http://www.google.com/analytics/learn/privacy.html).
+      <h2>Links and contact</h2>
+      <p>Links to publications, universities, Google Scholar, LinkedIn, and other external websites are governed by those services’ own privacy practices when you visit them. The email link opens your email application; this website does not have a contact form or a comments service.</p>
+      <p>For questions about this website, contact <a href="mailto:y.yuyi@wustl.edu">y.yuyi@wustl.edu</a>.</p>
+    </div>
+  </div>
+</section>
