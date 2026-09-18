@@ -78,7 +78,7 @@ refereed_presentations:
     title: "Learning with AI in Later Life: Educational Inequality in ChatGPT Use Among U.S. Adults Aged 50 and Older"
     authors: "Lai PHL, Yang Y"
     venue: "International Conference on Gerontechnology (ICG) 2026, Hong Kong, China"
-    link: "https://www.hkmu.edu.hk/icg2026/wp-content/uploads/sites/94/2026/06/3431.png"
+    link: "https://www.hkmu.edu.hk/icg2026/callforabstracts/"
     # Reference only; use the same compact display as other presentations.
     # Co-authored contribution, presented by Patrick Ho Lam Lai on June 23, 2026.
     # Yuyi Yang's contribution: data analysis.
@@ -86,12 +86,12 @@ refereed_presentations:
     title: "A Scalable Multi-Agent Large Language Model Workflow for Grounded Theory Coding"
     authors: "Yang Y, Huang J, An R"
     venue: "26th Annual Scientific Meeting of the American Academy of Health Behavior (AAHB), Austin, Texas"
-    link: "https://journals.newprairiepress.org/hbr/article/21123/galley/18752/download/#page=21"
+    link: "https://journals.newprairiepress.org/hbr/article/id/21123/"
   - year: "2026"
     title: "Use of Retrieval-Augmented Large Language Model Agent for Long-Form COVID-19 Fact-Checking"
     authors: "Huang J, Yang Y, Ji M, Alba C, Zhang S, An R"
     venue: "26th Annual Scientific Meeting of the American Academy of Health Behavior (AAHB), Austin, Texas"
-    link: "https://journals.newprairiepress.org/hbr/article/21123/galley/18752/download/#page=21"
+    link: "https://journals.newprairiepress.org/hbr/article/id/21123/"
   - year: "2026"
     title: "Using Transformer-Based Models to Monitor and Understand Momentary Affect Intensity from Smartphone Sensors"
     venue: "2026 Society for Affective Science (SAS) Annual Conference, Pittsburgh, Pennsylvania"
@@ -118,7 +118,7 @@ refereed_presentations:
     title: "Sentiment Analysis of Tweets on Menu Labeling Regulations in the US"
     authors: "Yang Y, Lin N, Batcheller Q, Zhou Q, Anderson J, An R"
     venue: "24th Annual Scientific Meeting of the American Academy of Health Behavior (AAHB), Savannah, Georgia"
-    link: "https://journals.newprairiepress.org/hbr/article/3893/galley/3870/download/#page=32"
+    link: "https://journals.newprairiepress.org/hbr/article/id/3893/"
   - year: "2023"
     title: "Sentiment Analysis of Tweets on Soda Taxes"
     venue: "2023 Institute of Clinical and Translational Sciences (ICTS) Data Research Symposium, St. Louis, Missouri"
