@@ -2,7 +2,7 @@
 layout: home
 permalink: /presentations/
 title: "Conference Presentations"
-excerpt: "Selected presentations and co-authored contributions at conferences, annual meetings, and research symposia"
+excerpt: "Selected presentations, workshops, and co-authored contributions at conferences, annual meetings, and research symposia"
 author_profile: false
 ---
 
@@ -10,9 +10,10 @@ author_profile: false
   <div class="section-shell">
     {% assign refereed_count = site.data.academic_activity.refereed_presentations | size %}
     {% assign non_refereed_count = site.data.academic_activity.non_refereed_presentations | size %}
-    {% assign total_presentations = refereed_count | plus: non_refereed_count %}
+    {% assign workshop_count = site.data.academic_activity.workshops | size %}
+    {% assign total_presentations = refereed_count | plus: non_refereed_count | plus: workshop_count %}
     {% assign presentation_today = site.time | date: '%Y-%m-%d' %}
-    {% assign all_contributions = site.data.academic_activity.refereed_presentations | concat: site.data.academic_activity.non_refereed_presentations %}
+    {% assign all_contributions = site.data.academic_activity.refereed_presentations | concat: site.data.academic_activity.non_refereed_presentations | concat: site.data.academic_activity.workshops %}
     {% assign upcoming_count = 0 %}
     {% for contribution in all_contributions %}
       {% if contribution.status == 'Upcoming' and contribution.start_date > presentation_today %}{% assign upcoming_count = upcoming_count | plus: 1 %}{% endif %}
@@ -21,7 +22,7 @@ author_profile: false
       <div>
         <p class="home-eyebrow">Conference presentations</p>
         <h1 id="presentations-heading">Research shared across scholarly communities.</h1>
-        <p class="section-intro">Selected presentations and co-authored contributions at conferences, annual meetings, and research symposia.</p>
+        <p class="section-intro">Selected presentations, workshops, and co-authored contributions at conferences, annual meetings, and research symposia.</p>
       </div>
       <p class="section-count">{{ total_presentations }} conference contributions{% if upcoming_count > 0 %} · {{ upcoming_count }} upcoming{% endif %}</p>
     </header>
@@ -48,6 +49,30 @@ author_profile: false
         {% endfor %}
       </div>
     </section>
+
+    {% if workshop_count > 0 %}
+    <section class="presentation-category presentation-category--secondary" aria-labelledby="workshops-heading">
+      <header class="presentation-category__header">
+        <div>
+          <h2 id="workshops-heading">Workshops</h2>
+        </div>
+        <span>{{ workshop_count }} {% if workshop_count == 1 %}workshop{% else %}workshops{% endif %}</span>
+      </header>
+      {% assign workshops_by_year = site.data.academic_activity.workshops | group_by: "year" %}
+      <div class="presentation-years">
+        {% for year_group in workshops_by_year %}
+        <section class="presentation-year-group" aria-labelledby="workshops-{{ year_group.name }}">
+          <h3 id="workshops-{{ year_group.name }}">{{ year_group.name }}</h3>
+          <div class="presentation-grid presentation-grid--workshops">
+            {% for item in year_group.items %}
+            {% include presentation-card.html item=item number=forloop.index today=presentation_today %}
+            {% endfor %}
+          </div>
+        </section>
+        {% endfor %}
+      </div>
+    </section>
+    {% endif %}
 
     <section class="presentation-category presentation-category--secondary" aria-labelledby="non-refereed-presentations-heading">
       <header class="presentation-category__header">

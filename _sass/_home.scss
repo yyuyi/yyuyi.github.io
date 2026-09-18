@@ -1290,6 +1290,10 @@ $home-serif: "Times New Roman", Times, "Nimbus Roman No9 L", Georgia, serif;
   gap: 0.85rem;
 }
 
+.presentation-grid--workshops {
+  grid-template-columns: minmax(0, 1fr);
+}
+
 .presentation-card {
   min-height: 190px;
   padding: 1.4rem;
