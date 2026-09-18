@@ -77,10 +77,9 @@ refereed_presentations:
   - year: "2026"
     title: "Learning with AI in Later Life: Educational Inequality in ChatGPT Use Among U.S. Adults Aged 50 and Older"
     venue: "International Conference on Gerontechnology (ICG) 2026, Hong Kong, China"
-    start_date: "2026-06-23"
-    contribution_type: "Co-authored contribution"
-    presented_by: "Patrick Ho Lam Lai"
-    contribution: "Data analysis"
+    # Reference only; use the same compact display as other presentations.
+    # Co-authored contribution, presented by Patrick Ho Lam Lai on June 23, 2026.
+    # Yuyi Yang's contribution: data analysis.
   - year: "2026"
     title: "A Scalable Multi-Agent Large Language Model Workflow for Grounded Theory Coding"
     venue: "2026 Scientific Meeting by the American Academy of Health Behavior (AAHB), Austin, Texas"
