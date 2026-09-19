@@ -32,6 +32,13 @@ honors:
 
 guest_lectures:
   - year: "2026"
+    title: "Building Auditable Qualitative Research Workflows with AI: Thematic Analysis, Grounded Theory, and Constant Comparative Analysis"
+    organization: "NYU Meta-Research Symposium 2026, New York University, NY"
+    title_link: "https://med.nyu.edu/research/meta-research/our-network/meta-research-symposium"
+    contribution_type: "Workshop"
+    status: "Upcoming"
+    start_date: "2026-10-27"
+  - year: "2026"
     title: "Discussion on AI and Generative AI in Public Health Research"
     organization: "International Center for Child Health and Development"
     organization_abbreviation: "ICHAD"
@@ -154,15 +161,6 @@ refereed_presentations:
     title: "Build Neural Network Models to Identify and Correct News Headlines Exaggerating Obesity-Related Scientific Findings"
     authors: "An R, Batcheller Q, Wang J, Yang Y"
     venue: "2023 Institute of Clinical and Translational Sciences (ICTS) Data Research Symposium, St. Louis, Missouri"
-
-workshops:
-  - year: "2026"
-    title: "Building Auditable Qualitative Research Workflows with AI: Thematic Analysis, Grounded Theory, and Constant Comparative Analysis"
-    venue: "NYU Meta-Research Symposium 2026, New York University, NY"
-    link: "https://med.nyu.edu/research/meta-research/our-network/meta-research-symposium"
-    contribution_type: "Workshop"
-    status: "Upcoming"
-    start_date: "2026-10-27"
 
 non_refereed_presentations:
   - year: "2025"
