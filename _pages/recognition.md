@@ -2,7 +2,7 @@
 layout: home
 permalink: /recognition/
 title: "Recognition"
-excerpt: "Honors, invited talks, leadership, and academic service"
+excerpt: "Honors, invited talks, workshops, leadership, and academic service"
 author_profile: false
 redirect_from:
   - /highlights/
@@ -14,7 +14,7 @@ redirect_from:
       <div>
         <p class="home-eyebrow">Recognition</p>
         <h1 id="recognition-heading">Honors, invited talks &amp; service.</h1>
-        <p class="section-intro">Selected honors, invited talks, academic leadership, and service contributions.</p>
+        <p class="section-intro">Selected honors, invited talks, workshops, academic leadership, and service contributions.</p>
       </div>
     </header>
 
@@ -29,6 +29,28 @@ redirect_from:
           <span class="academic-panel__label">Invited Talks &amp; Lectures</span>
           <ul>{% for item in site.data.academic_activity.guest_lectures %}<li><time>{{ item.year }}</time><div><strong>{{ item.title }}</strong><span>{{ item.organization }}{% if item.organization_link %} (<a class="academic-org-link" href="{{ item.organization_link }}" target="_blank" rel="noopener noreferrer">{{ item.organization_abbreviation }}</a>) {{ item.organization_detail }}{% endif %}</span>{% if item.invited_by_link %}<a class="academic-inline-link" href="{{ item.invited_by_link }}" target="_blank" rel="noopener noreferrer">{{ item.invited_by }}</a>{% endif %}</div></li>{% endfor %}</ul>
         </article>
+        {% assign workshop_count = site.data.academic_activity.workshops | size %}
+        {% if workshop_count > 0 %}
+        {% assign recognition_today = site.time | date: '%Y-%m-%d' %}
+        <article class="academic-panel" aria-labelledby="workshops-heading">
+          <span class="academic-panel__label" id="workshops-heading">Workshops</span>
+          <ul>
+            {% for item in site.data.academic_activity.workshops %}
+            <li>
+              <div>
+                <time>{{ item.year }}</time>
+                {% if item.status == 'Upcoming' and item.start_date > recognition_today %}<span class="academic-entry-status">Upcoming</span>{% endif %}
+              </div>
+              <div>
+                <strong>{% if item.link %}<a class="academic-title-link" href="{{ item.link | escape }}" target="_blank" rel="noopener noreferrer">{{ item.title | escape }}</a>{% else %}{{ item.title | escape }}{% endif %}</strong>
+                <span>{{ item.venue | escape }}</span>
+                {% if item.start_date %}<span><time datetime="{{ item.start_date }}">{{ item.start_date | date: '%B %-d, %Y' }}</time></span>{% endif %}
+              </div>
+            </li>
+            {% endfor %}
+          </ul>
+        </article>
+        {% endif %}
         <article class="academic-panel">
           <span class="academic-panel__label">Leadership &amp; service</span>
           <ul>{% for item in site.data.academic_activity.service %}<li><time>{{ item.year }}</time><div><strong>{% if item.title_link %}<a class="academic-title-link" href="{{ item.title_link }}" target="_blank" rel="noopener noreferrer">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}</strong><span>{{ item.organization }}</span></div></li>{% endfor %}</ul>
