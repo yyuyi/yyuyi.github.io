@@ -1,0 +1,12 @@
+{% comment %}
+Only published or accepted work belongs in the public publication list.
+Keep unfinished manuscripts in the source data for later CV updates, but do not
+render them. Use this same selection for the homepage publication count.
+{% endcomment %}
+{% assign public_publications = '' | split: '|' %}
+{% assign public_publication_statuses = 'Published|In press|Accepted|Accepted · Preprint' | split: '|' %}
+{% for publication_candidate in site.data.research_portfolio %}
+  {% if public_publication_statuses contains publication_candidate.status %}
+    {% assign public_publications = public_publications | push: publication_candidate %}
+  {% endif %}
+{% endfor %}

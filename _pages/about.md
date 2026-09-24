@@ -58,16 +58,11 @@ redirect_from:
   </div>
 </section>
 
+{% include publication-selection.html %}
 {% assign peer_reviewed_count = 0 %}
-{% for paper in site.data.research_portfolio %}
-  {% if paper.type == "Journal Publication" %}
-    {% if paper.status == "Published" or paper.status == "In press" %}
-      {% assign peer_reviewed_count = peer_reviewed_count | plus: 1 %}
-    {% endif %}
-  {% elsif paper.type == "CS Conference" %}
-    {% if paper.status contains "Accepted" or paper.status == "Published" or paper.status == "In press" %}
-      {% assign peer_reviewed_count = peer_reviewed_count | plus: 1 %}
-    {% endif %}
+{% for paper in public_publications %}
+  {% if paper.type == "Journal Publication" or paper.type == "CS Conference" %}
+    {% assign peer_reviewed_count = peer_reviewed_count | plus: 1 %}
   {% endif %}
 {% endfor %}
 
@@ -100,7 +95,7 @@ redirect_from:
       <small>Publication record</small>
     </a>
   </div>
-  <p class="home-metrics__note">Publication count includes published and in-press journal articles and accepted CS conference papers; excludes book chapters and manuscripts under review or in preparation.</p>
+  <p class="home-metrics__note">Publication count includes published, in-press, and accepted journal articles and CS conference papers; excludes book chapters.</p>
 </section>
 
 <section class="home-content section-page-block" id="research" aria-labelledby="research-heading">

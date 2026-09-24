@@ -6,16 +6,18 @@ excerpt: "Browse and filter Yuyi Yang’s interdisciplinary publication portfoli
 author_profile: false
 ---
 
+{% include publication-selection.html %}
+
 <section class="portfolio-section section-page-section" id="research-portfolio" aria-labelledby="portfolio-heading">
   <div class="section-shell">
     <header class="section-heading-row">
       <div>
         <p class="home-eyebrow">Publications</p>
         <h1 id="portfolio-heading">Research across disciplines.</h1>
-        <p class="section-intro">Journal articles, CS conference papers, book chapters, and works in progress.</p>
+        <p class="section-intro">Published, in-press, and accepted journal articles, CS conference papers, and book chapters.</p>
         <p class="publication-legend">My name appears in bold; * denotes corresponding authorship, and (co-first) denotes co-first authorship.</p>
       </div>
-      <p class="section-count"><span id="portfolio-visible-count">{{ site.data.research_portfolio | size }}</span> of {{ site.data.research_portfolio | size }} works</p>
+      <p class="section-count"><span id="portfolio-visible-count">{{ public_publications | size }}</span> of {{ public_publications | size }} works</p>
     </header>
 
     <div class="portfolio-filter-panel">
@@ -41,8 +43,6 @@ author_profile: false
           <button class="filter-chip" type="button" data-filter="CS Conference" aria-pressed="false">CS Conference</button>
           <button class="filter-chip" type="button" data-filter="Journal Publication" aria-pressed="false">Journal Publication</button>
           <button class="filter-chip" type="button" data-filter="Book Chapters" aria-pressed="false">Book Chapters</button>
-          <button class="filter-chip" type="button" data-filter="Under Review" aria-pressed="false">Under Review</button>
-          <button class="filter-chip" type="button" data-filter="In Preparation" aria-pressed="false">In Preparation</button>
         </div>
       </div>
 
@@ -68,9 +68,7 @@ author_profile: false
     </div>
     </div>
 
-    {% assign dated_publications = site.data.research_portfolio | where_exp: "paper", "paper.display_group != 'Under Review & Revision'" | where_exp: "paper", "paper.display_group != 'In Preparation'" %}
-    {% assign manuscript_groups = 'Under Review & Revision|In Preparation' | split: '|' %}
-    {% assign publications_by_year = dated_publications | group_by: "year" %}
+    {% assign publications_by_year = public_publications | group_by: "year" | sort: "name" | reverse %}
     <div class="portfolio-years" id="portfolio-grid" aria-live="polite">
       {% for year_group in publications_by_year %}
       <section class="portfolio-year-group" data-year-group="{{ year_group.name }}" aria-labelledby="publications-{{ year_group.name }}">
@@ -81,21 +79,6 @@ author_profile: false
           {% endfor %}
         </div>
       </section>
-      {% endfor %}
-
-      {% for manuscript_group in manuscript_groups %}
-      {% assign manuscripts = site.data.research_portfolio | where: 'display_group', manuscript_group %}
-      {% if manuscripts.size > 0 %}
-      {% if manuscript_group == 'Under Review & Revision' %}{% assign group_id = 'publications-under-review' %}{% else %}{% assign group_id = 'publications-in-preparation' %}{% endif %}
-      <section class="portfolio-year-group portfolio-status-group" data-fixed-position="last" aria-labelledby="{{ group_id }}">
-        <h2 id="{{ group_id }}">{{ manuscript_group | escape }}</h2>
-        <div class="portfolio-grid">
-          {% for paper in manuscripts %}
-          {% include portfolio-card.html paper=paper number=forloop.index %}
-          {% endfor %}
-        </div>
-      </section>
-      {% endif %}
       {% endfor %}
     </div>
     <p class="portfolio-empty" id="portfolio-empty" hidden>No publications match these filters.</p>
