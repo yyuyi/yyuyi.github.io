@@ -190,13 +190,12 @@
 - year: 2026
   title: "Process Rewards with Learned Reliability"
   authors: "Li J, Huang L, Huang C, Xu S, Cai D, Yang Y, Zhang W, Huang J"
-  venue: "Submitted to NeurIPS 2026; arXiv preprint."
-  status: "Submitted · Preprint"
-  type: "Under Review"
-  display_group: "Under Review & Revision"
+  venue: "NeurIPS 2026 Workshop on Mathematical Reasoning and AI (MATH-AI) · Poster"
+  status: "Accepted · Preprint"
+  type: "CS Conference"
   domains: ["AI Methods"]
   roles: ["Other"]
-  link: "https://arxiv.org/abs/2605.15529"
+  link: "https://openreview.net/forum?id=qNMKn4qdsd"
 
 - year: 2026
   title: "AI in Mental Health Services"
