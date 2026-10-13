@@ -190,8 +190,8 @@
 - year: 2026
   title: "Process Rewards with Learned Reliability"
   authors: "Li J, Huang L, Huang C, Xu S, Cai D, Yang Y, Zhang W, Huang J"
-  venue: "NeurIPS 2026 Workshop on Mathematical Reasoning and AI (MATH-AI) · Poster"
-  status: "Accepted · Preprint"
+  venue: "NeurIPS 2026 Workshop on Mathematical Reasoning and AI (MATH-AI)"
+  status: "Accepted"
   type: "CS Conference"
   domains: ["AI Methods"]
   roles: ["Other"]
