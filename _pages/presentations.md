@@ -29,8 +29,8 @@ author_profile: false
     <section class="presentation-category" aria-labelledby="refereed-presentations-heading">
       <header class="presentation-category__header">
         <div>
-          <p class="home-eyebrow">Refereed</p>
-          <h2 id="refereed-presentations-heading">Refereed Conference Presentations</h2>
+          <p class="home-eyebrow">Abstracts and posters</p>
+          <h2 id="refereed-presentations-heading">Conference Abstracts and Posters</h2>
         </div>
         <span>{{ refereed_count }} contributions</span>
       </header>
@@ -53,7 +53,7 @@ author_profile: false
       <header class="presentation-category__header">
         <div>
           <p class="home-eyebrow">Additional presentations</p>
-          <h2 id="non-refereed-presentations-heading">Additional Conference &amp; Symposium Presentations</h2>
+          <h2 id="non-refereed-presentations-heading">Additional Conference Contributions</h2>
         </div>
         <span>{{ non_refereed_count }} contributions</span>
       </header>
