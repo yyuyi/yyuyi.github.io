@@ -32,9 +32,10 @@ honors:
 
 guest_lectures:
   - year: "2026"
-    title: "Building Auditable Qualitative Research Workflows with AI: Thematic Analysis, Grounded Theory, and Constant Comparative Analysis"
+    title: "Workshop: Building Auditable Qualitative Research Workflows with AI: Thematic Analysis, Grounded Theory, and Constant Comparative Analysis"
     organization: "NYU Meta-Research Symposium 2026, New York University, NY"
-    title_link: "https://med.nyu.edu/research/meta-research/our-network/meta-research-symposium"
+    invitation_label: "Invited Workshop"
+    invitation_link: "https://med.nyu.edu/research/meta-research/our-network/meta-research-symposium"
     contribution_type: "Workshop"
     status: "Upcoming"
     start_date: "2026-10-27"

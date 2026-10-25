@@ -39,7 +39,7 @@ redirect_from:
                 <strong>{% if item.title_link %}<a class="academic-title-link" href="{{ item.title_link | escape }}" target="_blank" rel="noopener noreferrer">{{ item.title | escape }}</a>{% else %}{{ item.title | escape }}{% endif %}</strong>
                 <span>{{ item.organization }}{% if item.organization_link %} (<a class="academic-org-link" href="{{ item.organization_link }}" target="_blank" rel="noopener noreferrer">{{ item.organization_abbreviation }}</a>) {{ item.organization_detail }}{% endif %}</span>
                 {% if item.invited_by_link %}<a class="academic-inline-link" href="{{ item.invited_by_link }}" target="_blank" rel="noopener noreferrer">{{ item.invited_by }}</a>{% endif %}
-                {% if item.start_date %}<span><time datetime="{{ item.start_date }}">{{ item.start_date | date: '%B %-d, %Y' }}</time></span>{% endif %}
+                {% if item.invitation_link %}<a class="academic-inline-link" href="{{ item.invitation_link | escape }}" target="_blank" rel="noopener noreferrer">{{ item.invitation_label | escape }}</a>{% elsif item.start_date %}<span><time datetime="{{ item.start_date }}">{{ item.start_date | date: '%B %-d, %Y' }}</time></span>{% endif %}
               </div>
             </li>
             {% endfor %}
