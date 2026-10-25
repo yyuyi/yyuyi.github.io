@@ -12,18 +12,13 @@ author_profile: false
     {% assign non_refereed_count = site.data.academic_activity.non_refereed_presentations | size %}
     {% assign total_presentations = refereed_count | plus: non_refereed_count %}
     {% assign presentation_today = site.time | date: '%Y-%m-%d' %}
-    {% assign all_contributions = site.data.academic_activity.refereed_presentations | concat: site.data.academic_activity.non_refereed_presentations %}
-    {% assign upcoming_count = 0 %}
-    {% for contribution in all_contributions %}
-      {% if contribution.status == 'Upcoming' and contribution.start_date > presentation_today %}{% assign upcoming_count = upcoming_count | plus: 1 %}{% endif %}
-    {% endfor %}
     <header class="section-heading-row">
       <div>
         <p class="home-eyebrow">Conference presentations</p>
         <h1 id="presentations-heading">Research shared across scholarly communities.</h1>
         <p class="section-intro">Selected presentations and co-authored contributions at conferences, annual meetings, and research symposia.</p>
       </div>
-      <p class="section-count">{{ total_presentations }} conference contributions{% if upcoming_count > 0 %} · {{ upcoming_count }} upcoming{% endif %}</p>
+      <p class="section-count">{{ total_presentations }} conference contributions</p>
     </header>
 
     <section class="presentation-category" aria-labelledby="refereed-presentations-heading">
