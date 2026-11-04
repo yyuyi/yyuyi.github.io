@@ -176,6 +176,7 @@
   type: "CS Conference"
   domains: ["Biomedical Research", "AI Methods"]
   roles: ["Other"]
+  link: "https://aclanthology.org/2026.emnlp-main.1753/"
 
 - year: 2026
   title: "Nonsense Helps: Prompt Space Perturbation Broadens Reasoning Exploration"
