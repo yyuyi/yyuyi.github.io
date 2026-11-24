@@ -19,7 +19,8 @@ redirect_from:
         I am a PhD candidate in Computational and Data Sciences at Washington University in St. Louis and a McDonnell International Scholar. My research brings together agentic AI, qualitative inquiry, public health, and human-centered decision-making.
       </p>
       <p class="home-advisors">
-        Advised by <a href="https://socialwork.nyu.edu/faculty-and-research/our-faculty/ruopeng-an.html">Dr. Ruopeng An</a> and <a href="https://engineering.washu.edu/faculty/Jiaxin-Huang.html">Dr. Jiaxin Huang</a>.
+        Advisors: <a href="https://socialwork.nyu.edu/faculty-and-research/our-faculty/ruopeng-an.html">Dr. Ruopeng An</a>, <a href="https://engineering.washu.edu/faculty/Jiaxin-Huang.html">Dr. Jiaxin Huang</a>, and <a href="https://publichealth.washu.edu/faculty/patrick-fowler/">Dr. Patrick Fowler</a>.<br>
+        Committee Members: <a href="https://experts.illinois.edu/en/persons/fan-yang/">Dr. Fan Yang</a> and <a href="https://sds.washu.edu/people/nan-lin">Dr. Nan Lin</a>.
       </p>
 
       <div class="home-actions" aria-label="Profile links">
